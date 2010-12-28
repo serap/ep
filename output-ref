@@ -1,0 +1,6391 @@
+
+1_noop_0 0_lit@_1 1_@_;s_1 
+1_compare_1 1_0=_1 1_;s_1 
+1_noop_2 2_tuck_2 2_2>r_0 0_noop_1 1_min_1 1_2r>_1 1_call_1 
+1_;s_1 
+1_compare_1 1_0<_1 1_;s_1 
+1_lit_+_1 1_lit_2 2_and_1 1_;s_1 
+1_;s_1 
+1_call_1 
+1_lit_@_+_1 1_;s_1 
+1_call_1 
+1_lit_2 2_-_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_-_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_within_1 1_;s_1 
+1_useraddr_@_1 1_;s_1 
+1_call_1 
+1_@_;s_1 
+1_lit@_2 2_swap_3 3_!_1 1_;s_1 
+1_lit@_2 2_swap_3 3_!_1 1_;s_1 
+1_dup_2 2_0<_2 2_?branch_1 1_dnegate_1 
+1_;s_1 
+1_dup_1 1_0<=_1 1_noop_2 2_?branch_1 1_drop_1 1_branch_1 
+1_swap_2 2_>r_1 1_1-_1 1_call_1 
+1_noop_0 0_r>_1 1_swap_1 
+1_;s_1 
+1_noop_2 2_over_3 3_>r_2 2_rot_3 3_over_4 4_1+_4 4_noop_0 0_r>_1 1_move_1 1_c!_1 1_;s_1 
+1_over_2 2_+_1 1_swap_1 1_;s_1 
+1_>r_1 
+1_dup_2 2_?branch_1 1_over_2 2_c@_2 2_i_3 3_<>_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_branch_1 
+1_rdrop_1 1_;s_1 
+1_>r_1 
+1_dup_2 2_?branch_1 1_over_2 2_c@_2 2_i_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_branch_1 
+1_rdrop_1 1_;s_1 
+1_toupper_1 1_lit_2 2_-_1 1_dup_2 2_lit_3 3_u>_2 2_?branch_1 1_lit_2 2_-_1 1_dup_2 2_lit_3 3_u<=_2 2_?branch_1 1_drop_0 0_lit@_1 1_;s_1 
+1_dup_2 2_useraddr_3 3_@_3 3_u>=_2 2_?branch_1 1_drop_0 0_lit@_1 1_;s_1 
+1_noop_0 0_lit@_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_2 2_useraddr_3 3_@_3 3_um*_3 3_drop_2 2_rot_3 3_useraddr_4 4_@_4 4_um*_4 4_d+_2 2_noop_0 0_r>_1 1_;s_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_count_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_branch_1 
+1_1-_1 1_noop_0 0_i'_1 1_i_2 2_-_1 1_unloop_1 
+1_;s_1 
+1_dup_1 1_0<_1 1_;s_1 
+1_>r_0 0_lit_1 1_noop_0 0_i_1 1_um/mod_1 1_noop_0 0_r>_1 1_swap_2 2_>r_1 1_um/mod_1 1_noop_0 0_r>_1 1_;s_1 
+1_noop_0 0_laddr#_1 1_;s_1 
+1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_?dup_1 1_noop_2 2_?branch_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_lit@_2 2_?branch_1 1_noop_0 0_lit_1 1_(bye)_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_useraddr_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_>r_1 1_noop_2 2_?branch_1 1_noop_0 0_r>_1 1_useraddr_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_rdrop_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_sp@_1 1_noop_2 2_useraddr_3 3_@_3 3_u>_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_fp@_1 1_noop_2 2_useraddr_3 3_@_3 3_u>_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_sp@_1 1_useraddr_@_1 1_swap_2 2_-_1 1_lit@_2 2_/_1 1_;s_1 
+1_useraddr_@_1 1_sp!_1 1_;s_1 
+1_call_1 
+1_useraddr_@_1 1_fp!_1 1_;s_1 
+1_r>_2 2_r>_3 3_dup_4 4_count_5 5_+_4 4_aligned_4 4_>r_3 3_swap_2 2_>r_1 1_;s_1 
+1_lit_2 2_useraddr_3 3_!_1 1_;s_1 
+1_lit_2 2_useraddr_3 3_!_1 1_;s_1 
+1_noop_0 0_lit@_1 1_write-file_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_emit-file_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_key-file_1 1_;s_1 
+1_noop_0 0_lit@_1 1_key?-file_1 1_;s_1 
+1_call_1 
+1_count_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_count_1 1_;s_1 
+1_noop_0 0_lit@_1 1_lit-perform_1 
+1_noop_0 0_lit@_1 1_flush-file_1 1_drop_1 1_;s_1 
+1_newline_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_lit-perform_1 
+1_;s_1 
+1_swap_2 2_lit_3 3_max_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_i'_1 1_i_2 2_-_1 1_lit_2 2_min_1 1_2dup_1 1_lit-perform_1 
+1_noop_2 2_(+loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_swap_2 2_lit_3 3_max_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_i'_1 1_i_2 2_-_1 1_lit_2 2_min_1 1_2dup_1 1_lit-perform_1 
+1_noop_2 2_(+loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_call_1 
+1_lit@_2 2_+_1 1_aligned_1 1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_lit_@_1 1_dup_1 1_lit_2 2_u<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_c!_1 1_;s_1 
+1_noop_0 0_lit@_1 1_dup_1 1_lit_!_1 1_lit_!_;s_1 
+1_2drop_1 1_lit_@_1 1_lit_@_1 1_over_2 2_-_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_@_2 2_-_1 1_call_1 
+1_lit_@_1 1_lit_!_;s_1 
+1_lit_@_1 1_dup_1 1_lit@_2 2_u>=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_count_1 1_call_1 
+1_lit_!_1 1_lit_!_;s_1 
+1_noop_2 2_0<_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_rot_1 1_lit_2 2_over_3 3_<_2 2_?branch_1 1_lit_+_1 
+1_lit_+_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_2dup_3 3_or_2 2_0=_2 2_?branch_1 1_;s_1 
+1_dup_2 2_?branch_1 1_1-_1 1_noop_0 0_2dup_2 2_+_1 1_c@_1 1_call_1 
+1_branch_1 
+1_2drop_1 1_;s_1 
+1_>r_1 1_tuck_1 1_call_1 
+1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_over_2 2_-_1 1_does-exec_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_>r_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_over_2 2_-_1 1_does-exec_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_swap_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_r>_1 1_lit@_2 2_>r_1 1_stderr_1 1_lit_!_1 1_call_1 
+1_noop_0 0_r>_1 1_lit_!_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_2dup_3 3_cell+_3 3_@_3 3_=_2 2_?branch_1 1_lit_2 2_cells_2 2_+_1 1_count_1 1_lit-perform_1 
+1_drop_1 1_;s_1 
+1_branch_1 
+1_drop_1 1_dup_2 2_lit_3 3_lit_4 4_within_2 2_?branch_1 1_lit_+_1 1_negate_1 1_strsignal_1 1_lit-perform_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_lit_4 4_within_2 2_?branch_1 1_lit_+_1 1_negate_1 1_strerror_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_dup_2 2_>r_1 1_call_1 
+1_2dup_1 1_noop_0 0_r>_1 1_call_1 
+1_nip_1 1_-_1 1_;s_1 
+1_>r_1 1_does-exec_1 
+1_does-exec_1 
+1_@_1 1_over_2 2_min_1 1_/string_1 1_noop_0 0_over_1 1_swap_2 2_noop_0 0_r>_1 1_call_1 
+1_>r_1 1_over_2 2_-_1 1_dup_1 1_r>_2 2_?branch_1 1_1+_1 
+1_does-exec_1 
+1_+!_1 1_2dup_1 1_call_1 
+1_;s_1 
+1_does-exec_1 
+1_2dup_3 3_>r_2 2_>r_1 1_does-exec_1 
+1_@_1 1_/string_1 1_(parse-white)_1 1_2dup_1 1_call_1 
+1_noop_0 0_2dup_2 2_+_1 1_r>_2 2_-_1 1_1+_1 1_r>_2 2_min_1 1_does-exec_1 
+1_!_;s_1 
+1_dup_1 1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_dup_1 1_lit@_2 2_u>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_>r_1 1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_r>_3 3_or_2 2_useraddr_3 3_@_3 3_lit_4 4_<_3 3_and_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_/string_1 
+1_noop_0 0_over_1 1_c@_1 1_lit_2 2_-_1 1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_cells_1 1_lit_+_@_1 1_useraddr_2 2_!_0 0_lit_1 1_/string_1 1_branch_1 
+1_drop_1 
+1_;s_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_dup_3 3_>r_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_noop_2 2_?branch_1 1_dnegate_1 
+1_;s_1 
+1_dup_2 2_0=_2 2_?branch_1 1_noop_0 0_lit@_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_2rot_1 1_call_1 
+1_;s_1 
+1_noop_0 0_useraddr_1 1_call_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_call_1 
+1_;s_1 
+1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_call_1 
+1_over_2 2_?branch_1 1_>r_1 1_noop_2 2_lit_3 3_lit_4 4_2swap_2 2_noop_1 
+1_dup_2 2_>r_1 1_call_1 
+1_dup_2 2_?branch_1 1_dup_2 2_r>_3 3_-_2 2_?branch_1 1_dup_1 1_1-_1 1_useraddr_!_1 1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_branch_1 
+1_2drop_0 0_rdrop_0 0_lit@_1 1_branch_1 
+1_rdrop_1 1_2drop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit@_1 
+1_branch_1 
+1_drop_0 0_2drop_0 0_lit_1 1_lit_2 2_noop_0 0_lit@_1 
+1_r>_2 2_useraddr_3 3_!_1 1_;s_1 
+1_call_1 
+1_>r_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_noop_0 0_rdrop_0 0_lit@_1 1_branch_1 
+1_noop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit@_1 
+1_;s_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_2drop_0 0_lit@_1 1_;s_1 
+1_useraddr_@_1 1_dup_2 2_0<_2 2_?branch_1 1_nip_1 1_branch_1 
+1_1+_1 
+1_;s_1 
+1_dup_2 2_>r_1 1_count_1 1_call_1 
+1_dup_2 2_?branch_1 1_rdrop_1 1_branch_1 
+1_noop_0 0_r>_1 1_swap_1 
+1_;s_1 
+1_call_1 
+1_?dup_1 1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_0<_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_2drop_1 1_;s_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_?branch_1 1_does-exec_1 
+1_@_1 1_lit@_2 2_/_1 1_1+_1 1_lit@_2 2_*_1 1_does-exec_1 
+1_!_;s_1 
+1_does-exec_1 
+1_does-exec_1 
+1_!_1 1_drop_1 1_;s_1 
+1_call_1 
+1_;s_1 
+1_lit+_1 1_@_1 1_(listlfind)_1 1_;s_1 
+1_dup_2 2_lit+_2 2_@_2 2_lit+_2 2_perform_1 
+1_;s_1 
+1_dup_2 2_lit+_2 2_@_2 2_lit+_2 2_perform_1 
+1_;s_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_call_1 
+1_;s_1 
+1_0=_1 1_2*_1 1_1+_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_lit+_1 1_@_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_and_2 2_?branch_1 1_drop_0 0_lit_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_cell+_1 1_dup_1 1_cell+_1 1_swap_1 1_@_1 1_lit@_2 2_and_1 1_;s_1 
+1_call_1 
+1_+_1 1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_swap_1 1_cell+_1 1_@_1 1_dup_2 2_lit@_3 3_and_2 2_0=_2 2_?branch_1 1_swap_1 1_@_1 1_swap_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_lit@_3 3_and_2 2_?branch_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_>r_0 0_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_lit+_1 1_@_1 
+1_noop_0 0_r>_1 1_lit@_2 2_and_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_tuck_1 1_call_1 
+1_swap_1 1_lit@_2 2_and_1 1_call_1 
+1_;s_1 
+1_dup_2 2_cell+_2 2_@_2 2_lit@_3 3_and_2 2_?branch_1 1_lit_+_@_1 1_branch_1 
+1_drop_0 0_lit_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_(do)_1 
+1_dup_2 2_dup_3 3_aligned_3 3_<>_2 2_?branch_1 1_drop_0 0_lit@_1 1_unloop_1 1_;s_1 
+1_dup_@_1 1_dup_2 2_?branch_1 1_noop_2 2_dup_3 3_rot_1 1_call_1 
+1_noop_4 4_within_2 2_?branch_1 1_drop_0 0_lit@_1 1_unloop_1 1_;s_1 
+1_branch_1 
+1_2drop_0 0_lit_1 1_unloop_1 1_;s_1 
+1_(loop)_1 1_unloop_1 1_drop_0 0_lit@_1 1_;s_1 
+1_dup_1 1_call_1 
+1_-_1 1_noop_2 2_useraddr_3 3_@_3 3_cell+_3 3_cell+_3 3_min_2 2_lit@_3 3_max_2 2_lit@_3 3_(?do)_1 
+1_dup_1 1_i_2 2_-_1 1_dup_@_1 1_lit_2 2_and_1 1_swap_2 2_+_1 1_cell+_1 1_call_1 
+1_noop_2 2_over_3 3_lit@_4 4_+_3 3_=_2 2_?branch_1 1_dup_1 1_i_2 2_-_1 1_lit@_2 2_-_1 1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_nip_1 1_unloop_1 1_;s_1 
+1_drop_1 
+1_lit@_2 2_(+loop)_1 
+1_unloop_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_@_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_cell+_1 1_@_1 1_branch_1 
+1_drop_0 0_lit_1 
+1_;s_1 
+1_!_;s_1 
+1_c!_1 1_;s_1 
+1_over_2 2_!_0 0_noop_1 1_cell+_1 1_!_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_useraddr_2 2_@_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_count_1 1_call_1 
+1_dup_2 2_?branch_1 1_noop_2 2_rot_3 3_drop_2 2_noop_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_noop_2 2_execute_1 
+1_;s_1 
+1_2drop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_rp@_1 1_useraddr_!_1 
+1_call_1 
+1_lit-perform_1 
+1_lit-perform_1 
+1_dup_2 2_?branch_1 1_lit-perform_1 
+1_noop_2 2_execute_1 
+1_branch_1 
+1_2drop_1 1_;s_1 
+1_useraddr_@_1 1_>r_0 0_lit_1 1_lit-perform_1 
+1_r>_2 2_useraddr_3 3_!_1 1_lit-perform_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_dup_1 1_call_1 
+1_noop_2 2_execute_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_nip_1 1_nip_1 1_call_1 
+1_branch_1 
+1_drop_1 1_2dup_3 3_2>r_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_2rdrop_0 0_lit_1 1_branch_1 
+1_2r>_1 1_lit-perform_1 
+1_;s_1 
+1_swap_2 2_>r_1 1_dup_1 1_allocate_1 1_lit-perform_1 
+1_swap_2 2_2dup_2 2_r>_3 3_-rot_2 2_noop_1 1_move_1 1_;s_1 
+1_dup_1 1_2@_2 2_drop_1 1_dup_2 2_?branch_1 1_free_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit_2 2_rot_3 3_2!_0 0_noop_1 1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_over_2 2_>r_1 1_+_1 1_dup_2 2_>r_1 1_resize_1 1_lit-perform_1 
+1_r>_2 2_over_3 3_r>_4 4_+_3 3_-rot_2 2_noop_1 1_;s_1 
+1_useraddr_2 2_@_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(bye)_1 
+1_does-exec_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_lit_2 2_dup_3 3_@_3 3_lit@_4 4_*_3 3_cells_3 3_+_2 2_cell+_2 2_noop_0 0_lit@_1 1_cells_1 1_call_1 
+1_(do)_1 
+1_noop_0 0_i_1 1_@_1 1_lit@_2 2_(+loop)_1 1_unloop_1 1_;s_1 
+1_lit_2 2_dup_3 3_@_3 3_dup_4 4_1+_4 4_lit@_5 5_1-_5 5_min_4 4_lit_5 5_!_3 3_lit@_4 4_*_3 3_cells_3 3_+_2 2_cell+_2 2_noop_0 0_lit@_1 1_1-_1 1_cells_1 1_call_1 
+1_swap_2 2_(do)_1 
+1_i_2 2_!_0 0_noop_1 1_lit_2 2_cells_2 2_(+loop)_1 1_unloop_1 1_;s_1 
+1_does-exec_1 
+1_does-exec_1 
+1_2@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_swap_1 1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_call_1 
+1_r>_2 2_useraddr_3 3_!_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_useraddr_@_1 1_swap_1 1_call_1 
+1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_dup_2 2_?branch_1 1_1-_1 1_2dup_3 3_+_2 2_c@_2 2_lit@_3 3_<>_2 2_?branch_1 1_1+_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_useraddr_2 2_@_2 2_?dup_1 1_noop_2 2_?branch_1 1_count_1 1_lit-perform_1 
+1_drop_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_2dup_3 3_u>_2 2_?branch_1 1_swap_1 
+1_drop_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_over_1 1_call_1 
+1_noop_0 0_lit_1 1_pick_1 1_noop_0 0_over_1 1_lit-perform_1 
+1_/string_1 1_;s_1 
+1_>r_0 0_lit_1 1_pick_1 1_-_1 1_call_1 
+1_lit-perform_1 
+1_noop_0 0_r>_1 1_call_1 
+1_lit-perform_1 
+1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_over_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_2drop_1 1_2drop_1 1_branch_1 
+1_2drop_1 1_2drop_1 1_2drop_1 1_drop_1 
+1_branch_1 
+1_call_1 
+1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_pick_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_2drop_1 1_2drop_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_lit_2 2_@_2 2_lit_3 3_(?do)_1 
+1_call_1 
+1_call_1 
+1_(loop)_1 
+1_unloop_1 1_drop_1 1_lit-perform_1 
+1_useraddr_2 2_useraddr_3 3_!_1 1_;s_1 
+1_useraddr_@_1 1_rp!_1 1_noop_0 0_useraddr_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_drop_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_rp@_1 1_useraddr_!_1 1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_lit-perform_1 
+1_does-exec_1 
+1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_up!_1 1_call_1 
+1_sp@_1 1_useraddr_2 2_!_0 0_useraddr_1 1_call_1 
+1_call_1 
+1_lit_2 2_lit_3 3_useraddr_4 4_2!_1 1_rp@_1 1_useraddr_!_1 1_fp@_1 1_useraddr_2 2_!_0 0_useraddr_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_2 2_lit_3 3_<>_2 2_?branch_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(bye)_1 
+1_;s_1 
+1_lit@_2 2_0=_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_(bye)_1 
+1_;s_1 
+1_call_1 
+1_+_1 1_dup_1 1_1-_1 1_call_1 
+1_call_1 
+1_within_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_call_1 
+1_!_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_c!_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_!_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_cells_1 1_call_1 
+1_2!_1 1_;s_1 
+1_call_1 
+1_dup_2 2_aligned_2 2_swap_3 3_(?do)_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_call_1 
+1_dup_1 1_faligned_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_swap_2 2_(?do)_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_dup_1 1_lit@_2 2_or_1 1_call_1 
+1_call_1 
+1_swap_1 1_dup_1 1_call_1 
+1_move_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_swap_1 1_dup_1 1_call_1 
+1_move_1 1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_lit_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_1 1_useraddr_@_1 1_max_1 1_useraddr_!_1 1_call_1 
+1_call_1 
+1_call_1 
+1_useraddr_!_1 1_lit_@_1 1_lit_2 2_or_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_lit_@_1 1_0<>_1 1_lit@_2 2_and_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_!_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_lit_1 1_lit_!_;s_1 
+1_lit_2 2_useraddr_3 3_!_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_!_;s_1 
+1_useraddr_@_1 1_;s_1 
+1_useraddr_@_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_2 2_over_3 3_c@_3 3_-rot_2 2_lit_3 3_/string_2 2_noop_1 1_;s_1 
+1_lit-perform_1 
+1_lit-perform_1 
+1_2drop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_1 1_useraddr_2 2_!_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_!_;s_1 
+1_noop_0 0_lit_1 1_compile-prim1_1 1_;s_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_compile-prim1_1 1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_2 2_over_3 3_lit+_3 3_=_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_drop_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit@_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_lit-perform_1 
+1_branch_1 
+1_swap_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_nip_1 1_nip_1 1_call_1 
+1_branch_1 
+1_drop_1 1_2dup_3 3_2>r_1 1_call_1 
+1_dup_2 2_?branch_1 1_noop_2 2_0>_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_2rdrop_1 1_branch_1 
+1_drop_1 1_2r>_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_useraddr_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_useraddr_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_over_1 1_char+_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_over_1 1_call_1 
+1_swap_1 1_move_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_2 2_tuck_2 2_@_2 2_or_1 1_swap_2 2_!_0 0_noop_1 1_;s_1 
+1_tuck_1 1_@_1 1_swap_2 2_invert_2 2_and_1 1_swap_2 2_!_0 0_noop_1 1_;s_1 
+1_noop_2 2_tuck_2 2_@_2 2_xor_1 1_swap_2 2_!_0 0_noop_1 1_;s_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_swap_2 2_lit_3 3_+!_1 1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_2@_1 1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit+_1 1_@_;s_1 
+1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_>r_1 1_lit-perform_1 
+1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_call_1 
+1_noop_0 0_r>_1 1_lit-perform_1 
+1_call_1 
+1_finish-code_1 1_noop_0 0_lit@_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_lit+_1 1_!_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_useraddr_3 3_!_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_finish-code_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_?dup_1 1_;s_1 
+1_lit+_1 1_dup_2 2_>r_1 1_@_1 1_over_2 2_!_0 0_r>_1 1_!_;s_1 
+1_>r_0 0_2dup_2 2_2dup_2 2_noop_0 0_r>_1 1_call_1 
+1_lit_@_and_1 1_?dup_1 1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_2dup_1 1_lit-perform_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_branch_1 
+1_2drop_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_2drop_1 1_2drop_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_2 2_@_2 2_lit_3 3_and_2 2_?branch_1 1_dup_2 2_@_2 2_lit_3 3_xor_2 2_2dup_2 2_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_dup_2 2_lit+_2 2_@_2 2_lit+_2 2_perform_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_dup_2 2_lit+_2 2_@_2 2_lit+_2 2_perform_1 
+1_;s_1 
+1_>r_1 1_2over_3 3_=_2 2_?branch_1 1_rdrop_1 1_call_1 
+1_;s_1 
+1_2dup_3 3_+_2 2_i_3 3_swap_2 2_c!_0 0_r>_1 1_lit-perform_1 
+1_noop_2 2_1+_2 2_rot_3 3_1+_3 3_-rot_2 2_noop_1 1_;s_1 
+1_dup_2 2_?branch_1 1_noop_0 0_lit@_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_lit-perform_1 
+1_noop_2 2_1-_2 2_rot_3 3_1-_3 3_-rot_2 2_noop_1 
+1_noop_0 0_lit@_1 1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 
+1_dup_2 2_lit@_3 3_=_2 2_?branch_1 1_drop_0 0_lit@_1 
+1_dup_2 2_lit@_3 3_u<_2 2_?branch_1 1_cells_1 1_lit_+_1 1_perform_1 
+1_;s_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_lit-perform_1 
+1_noop_2 2_rot_3 3_noop_0 0_over_1 1_2dup_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_2drop_1 1_nip_1 1_;s_1 
+1_dup_1 1_0<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_cell+_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_useraddr_2 2_@_2 2_@_2 2_+_1 1_perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_over_1 1_call_1 
+1_+_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_useraddr_2 2_@_2 2_+_1 1_;s_1 
+1_does-exec_1 
+1_2!_1 1_;s_1 
+1_does-exec_1 
+1_call_1 
+1_does-exec_1 
+1_drop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_<>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_does-exec_1 
+1_!_;s_1 
+1_does-exec_1 
+1_@_1 1_noop_0 0_lit_1 1_;s_1 
+1_stdin_1 1_file-eof?_1 1_noop_2 2_?branch_1 1_noop_0 0_lit@_1 1_;s_1 
+1_does-exec_1 
+1_does-exec_1 
+1_@_1 1_call_1 
+1_does-exec_1 
+1_!_1 1_call_1 
+1_lit@_2 2_noop_0 0_lit_1 1_does-exec_1 
+1_+!_1 1_;s_1 
+1_does-exec_1 
+1_does-exec_1 
+1_@_;s_1 
+1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_@_;s_1 
+1_(read-line)_1 1_nip_1 1_;s_1 
+1_lit_2 2_<>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_does-exec_1 
+1_@_1 1_reposition-file_1 1_lit-perform_1 
+1_does-exec_1 
+1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_!_;s_1 
+1_does-exec_1 
+1_@_1 1_call_1 
+1_does-exec_1 
+1_@_1 1_file-position_1 1_lit-perform_1 
+1_does-exec_1 
+1_@_1 1_noop_0 0_lit_1 1_d-_1 1_noop_0 0_lit_1 1_;s_1 
+1_does-exec_1 
+1_@_;s_1 
+1_does-exec_1 
+1_call_1 
+1_does-exec_1 
+1_call_1 
+1_call_1 
+1_does-exec_1 
+1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_@_1 1_/string_1 1_does-exec_1 
+1_@_1 1_(read-line)_1 1_lit-perform_1 
+1_does-exec_1 
+1_+!_1 1_swap_1 1_does-exec_1 
+1_noop_2 2_+!_0 0_dup_1 1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_@_1 1_=_1 1_and_1 1_noop_2 2_?branch_1 1_drop_1 1_does-exec_1 
+1_@_1 1_2*_1 1_call_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_does-exec_1 
+1_+!_1 1_;s_1 
+1_dup_2 2_>r_1 1_lit@_2 2_+_1 1_dup_1 1_allocate_1 1_lit-perform_1 
+1_tuck_1 1_swap_2 2_noop_0 0_lit_1 1_fill_1 1_useraddr_@_1 1_swap_2 2_useraddr_3 3_!_1 1_does-exec_1 
+1_noop_2 2_!_0 0_r>_1 1_does-exec_1 
+1_noop_2 2_!_0 0_useraddr_1 1_@_1 1_!_;s_1 
+1_dup_1 1_lit@_2 2_+_1 1_useraddr_@_1 1_swap_1 1_resize_1 1_lit-perform_1 
+1_useraddr_!_1 1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_@_1 1_/string_1 1_noop_0 0_lit_1 1_fill_1 1_;s_1 
+1_lit_2 2_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_call_1 
+1_useraddr_@_1 1_does-exec_1 
+1_@_1 1_useraddr_!_1 1_free_1 1_lit-perform_1 
+1_;s_1 
+1_does-exec_1 
+1_useraddr_@_1 1_swap_1 1_1+_1 1_;s_1 
+1_useraddr_2 2_@_2 2_>r_1 1_swap_2 2_useraddr_3 3_!_1 1_1-_1 1_dup_1 1_>r_0 0_lit_1 1_lit-perform_1 
+1_dup_2 2_?branch_1 1_r>_2 2_lit_3 3_(?do)_1 
+1_nip_1 1_(loop)_1 
+1_unloop_1 1_r>_2 2_useraddr_3 3_!_1 1_;s_1 
+1_rdrop_1 1_rdrop_1 1_;s_1 
+1_lit_2 2_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_noop_2 2_rot_3 3_>r_2 2_2>r_0 0_lit_1 1_noop_0 0_lit@_1 1_call_1 
+1_2r>_1 1_does-exec_1 
+1_noop_3 3_2!_0 0_lit_1 1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_noop_2 2_!_0 0_r>_1 1_lit-perform_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_useraddr_2 2_@_2 2_0=_2 2_?branch_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_branch_1 
+1_;s_1 
+1_call_1 
+1_does-exec_1 
+1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_does-exec_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_lit-perform_1 
+1_branch_1 
+1_;s_1 
+1_>r_1 1_call_1 
+1_does-exec_1 
+1_2!_1 1_does-exec_1 
+1_noop_2 2_!_0 0_r>_1 1_lit-perform_1 
+1_does-exec_1 
+1_@_1 1_close-file_1 1_swap_2 2_2dup_2 2_or_1 1_call_1 
+1_drop_1 1_lit-perform_1 
+1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_rot_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_over_2 2_>r_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_lit-perform_1 
+1_;s_1 
+1_dup_1 1_lit-perform_1 
+1_negate_1 1_lit_2 2_+!_0 0_lit_1 1_@_1 1_dup_1 1_lit_2 2_u<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_2drop_1 1_drop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_2drop_1 1_call_1 
+1_!_;s_1 
+1_lit_2 2_-_1 1_;s_1 
+1_noop_0 0_lit_1 1_/string_1 1_;s_1 
+1_1-_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_rot_1 1_drop_0 0_lit@_1 1_branch_1 
+1_>r_1 1_noop_2 2_dup_3 3_>r_2 2_c!_0 0_r>_1 1_r>_2 2_lit_3 3_/string_2 2_noop_0 0_lit@_1 
+1_;s_1 
+1_drop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_!_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_swap_3 3_1+_3 3_/string_2 2_noop_1 1_;s_1 
+1_dup_2 2_lit_3 3_@_3 3_u<_2 2_?branch_1 1_cells_1 1_lit_@_+_1 1_@_1 1_call_1 
+1_branch_1 
+1_drop_0 0_lit_1 1_noop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_@_2 2_lit_3 3_>_2 2_?branch_1 1_lit_2 2_@_2 2_@_2 2_lit_3 3_lit_4 4_+!_2 2_lit@_3 3_lit_4 4_+!_2 2_lit_3 3_@_3 3_!_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_2dup_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_>r_1 1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_r>_3 3_or_2 2_?branch_1 1_2drop_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_>r_1 1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_r>_3 3_or_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit@_2 2_lit_3 3_!_1 
+1_lit_2 2_@_2 2_lit_3 3_>_2 2_?branch_1 1_call_1 
+1_over_2 2_c@_2 2_lit_3 3_<>_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_branch_1 
+1_noop_0 0_lit@_1 1_lit_!_;s_1 
+1_stdout_1 1_lit_!_1 1_stdin_1 1_lit_!_1 1_lit_!_1 1_lit_!_1 1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_;s_1 
+1_lit_2 2_or_1 1_;s_1 
+1_dup_2 2_>r_1 1_write-file_1 1_?dup_1 1_noop_2 2_?branch_1 1_r>_2 2_drop_1 1_;s_1 
+1_newline_1 1_noop_0 0_r>_1 1_write-file_1 1_;s_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_0=_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_does-exec_1 
+1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_nip_1 1_does-exec_1 
+1_noop_2 2_@_2 2_rot_3 3_-_2 2_=_1 1_noop_2 2_?branch_1 1_does-exec_1 
+1_noop_2 2_0=_2 2_?branch_1 1_lit_2 2_@_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_2dup_3 3_>r_2 2_>r_1 1_dup_2 2_c@_2 2_char+_2 2_+_1 1_swap_1 1_move_1 1_r>_2 2_r>_3 3_dup_4 4_c@_4 4_rot_2 2_+_1 1_swap_2 2_c!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_dup_1 1_lit_2 2_cells_2 2_+_1 1_allocate_1 1_lit-perform_1 
+1_>r_0 0_lit_1 1_swap_2 2_i_3 3_2!_0 0_r>_1 1_;s_1 
+1_call_1 
+1_lit_!_1 1_lit_2 2_2@_3 3_noop_0 0_lit@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_>r_1 1_i_2 2_cell+_2 2_@_2 2_over_3 3_+_2 2_i_3 3_@_3 3_u>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_tuck_1 1_noop_0 0_i_1 1_cell+_1 1_dup_2 2_@_2 2_cell+_2 2_+_1 1_swap_1 1_cmove_1 1_lit_2 2_i_3 3_cell+_3 3_dup_4 4_@_4 4_cell+_4 4_+_3 3_noop_0 0_lit_1 1_pick_1 1_+_1 1_c!_1 1_lit_+_1 1_r>_2 2_cell+_2 2_+!_0 0_noop_1 1_;s_1 
+1_lit_2 2_swap_3 3_cell+_3 3_!_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_rot_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_2dup_1 1_call_1 
+1_(?do)_1 
+1_i_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_lit_2 2_i_3 3_c!_1 
+1_(loop)_1 
+1_unloop_1 1_rot_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_cell+_1 1_dup_1 1_cell+_1 1_swap_1 1_@_;s_1 
+1_2dup_1 1_noop_0 0_lit_1 1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_2drop_1 1_noop_2 2_lit_3 3_-rot_2 2_lit_3 3_-rot_2 2_noop_1 1_;s_1 
+1_>r_0 0_noop_3 3_1+_3 3_-rot_2 2_i_3 3_1-_3 3_-rot_2 2_noop_1 1_r>_2 2_-_1 1_;s_1 
+1_dup_1 1_call_1 
+1_tuck_1 1_dup_2 2_?branch_1 1_branch_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_2drop_1 1_2drop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_2dup_3 3_lit_4 4_u>_3 3_swap_3 3_1+_3 3_c@_3 3_lit_4 4_=_3 3_and_2 2_>r_1 1_over_2 2_c@_2 2_lit_3 3_=_2 2_>r_1 1_over_2 2_c@_2 2_lit_3 3_=_2 2_>r_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_r>_2 2_r>_3 3_r>_4 4_or_3 3_or_2 2_or_1 1_;s_1 
+1_dup_1 1_lit_2 2_=_1 1_swap_2 2_lit_3 3_=_2 2_or_1 1_;s_1 
+1_noop_0 0_lit_1 1_dup_2 2_c@_2 2_+_1 1_c@_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_1-_1 1_noop_0 0_2dup_2 2_+_1 1_c@_1 1_call_1 
+1_noop_2 2_?branch_1 1_;s_1 
+1_branch_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_count_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_lit_2 2_count_3 3_lit_4 4_/string_3 3_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_count_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_lit_2 2_count_3 3_lit_4 4_/string_3 3_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit_2 2_c!_0 0_useraddr_1 1_2@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_c@_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_count_2 2_over_1 1_c@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_>r_1 1_/string_1 1_noop_0 0_i_1 1_over_2 2_>r_1 1_swap_1 1_cmove_1 1_2r>_1 1_;s_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_;s_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 
+1_;s_1 
+1_call_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_branch_1 
+1_;s_1 
+1_noop_0 0_over_1 1_swap_1 1_call_1 
+1_call_1 
+1_noop_0 0_over_1 1_swap_2 2_noop_0 0_lit_1 1_call_1 
+1_dup_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 1_call_1 
+1_call_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_2 2_lit_3 3_/string_2 2_>r_1 1_swap_2 2_2dup_2 2_noop_0 0_i_1 1_cmove_1 1_noop_0 0_r>_1 
+1_+_1 1_nip_1 1_over_2 2_-_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_count_1 1_call_1 
+1_nip_1 1_lit_2 2_c!_0 0_noop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_lit_2 2_count_3 3_noop_0 0_lit@_1 1_open-file_1 1_;s_1 
+1_lit_2 2_lit_3 3_!_1 1_>r_1 1_>r_0 0_lit_1 1_call_1 
+1_call_1 
+1_r>_2 2_r>_3 3_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_>r_1 1_2dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_rdrop_0 0_lit_1 1_call_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_>r_0 0_lit_1 1_count_2 2_noop_0 0_r>_1 
+1_;s_1 
+1_branch_1 
+1_noop_0 0_r>_1 1_lit_2 2_>r_1 1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_noop_0 0_r>_1 1_drop_0 0_lit_1 1_pick_1 1_noop_0 0_lit_1 1_pick_1 1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_drop_1 1_>r_0 0_2drop_0 0_2drop_0 0_r>_1 1_lit_2 2_count_3 3_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_>r_1 1_drop_1 
+1_branch_1 
+1_2drop_1 1_2drop_1 1_2drop_0 0_r>_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_does-exec_1 
+1_2@_1 1_;s_1 
+1_does-exec_1 
+1_@_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_2*_1 1_cells_1 1_call_1 
+1_drop_0 0_lit_1 1_2@_2 2_nip_2 2_lit_3 3_2!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_2 2_lit_3 3_(?do)_1 
+1_dup_2 2_>r_1 1_2@_2 2_2over_4 4_noop_1 1_call_1 
+1_noop_2 2_?branch_1 1_2drop_0 0_rdrop_0 0_unloop_0 0_lit@_1 1_;s_1 
+1_noop_0 0_r>_1 1_cell+_1 1_cell+_1 1_(loop)_1 
+1_unloop_1 1_2drop_1 1_drop_0 0_lit@_1 1_;s_1 
+1_lit_2 2_2@_3 3_2*_3 3_cells_3 3_noop_0 0_lit_1 1_cells_1 1_call_1 
+1_noop_2 2_2/_2 2_lit@_3 3_/_2 2_lit_3 3_2!_0 0_noop_1 1_2!_1 1_;s_1 
+1_call_1 
+1_2dup_1 1_call_1 
+1_noop_0 0_useraddr_1 1_2@_2 2_2>r_0 0_2dup_2 2_useraddr_3 3_2!_0 0_lit_1 1_call_1 
+1_2r>_3 3_useraddr_4 4_2!_1 1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_2dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_2drop_1 1_close-file_1 1_lit-perform_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_2*_1 1_cells_1 1_call_1 
+1_(?do)_1 
+1_call_1 
+1_noop_0 0_i_1 1_2@_1 1_lit-perform_1 
+1_lit_2 2_cells_2 2_(+loop)_1 
+1_unloop_1 1_;s_1 
+1_lit_2 2_2@_3 3_lit_4 4_cells_4 4_under+_3 3_noop_1 1_1-_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit_!_;s_1 
+1_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_pick_1 1_lit_!_;s_1 
+1_noop_2 2_lit@_3 3_<>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit@_3 3_<>_2 2_swap_3 3_lit@_4 4_<>_3 3_and_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_<>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_<>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_<>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_lit@_4 4_1+_4 4_within_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit@_3 3_lit@_4 4_1+_4 4_within_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_1+_1 1_lit@_2 2_*_1 1_1-_1 1_>r_0 0_i_1 1_pick_1 1_noop_0 0_i_1 1_pick_1 1_noop_0 0_i_1 1_pick_1 1_rdrop_1 1_dup_1 1_call_1 
+1_;s_1 
+1_1+_1 1_lit@_2 2_*_1 1_1-_1 1_>r_0 0_i_1 1_call_1 
+1_noop_0 0_i_1 1_call_1 
+1_noop_0 0_i_1 1_call_1 
+1_rdrop_1 1_dup_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_@_2 2_?branch_1 1_noop_0 0_lit@_1 1_branch_1 
+1_noop_0 0_lit@_1 
+1_;s_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_0=_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_swap_2 2_!_0 0_noop_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_drop_1 1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit@_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_drop_1 1_lit-perform_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_!_;s_1 
+1_lit_@_1 1_dup_2 2_lit_3 3_>=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_tuck_2 2_!_0 0_noop_1 1_cell+_1 1_noop_2 2_tuck_2 2_!_0 0_noop_1 1_cell+_1 1_noop_2 2_tuck_2 2_!_0 0_noop_1 1_cell+_1 1_lit_!_;s_1 
+1_lit_@_1 1_dup_2 2_lit_3 3_<=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_lit@_2 2_-_1 1_dup_@_1 1_swap_1 1_lit@_2 2_-_1 1_dup_@_1 1_swap_1 1_lit@_2 2_-_1 1_dup_@_1 1_swap_1 1_lit_!_;s_1 
+1_drop_1 1_>r_1 1_drop_1 
+1_call_1 
+1_over_2 2_i_3 3_u>=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_rdrop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_drop_0 0_lit@_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_0 0_lit@_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_drop_0 0_lit@_1 1_;s_1 
+1_>r_1 1_>r_0 0_lit_1 1_call_1 
+1_swap_1 1_lit@_2 2_-_1 1_swap_2 2_noop_0 0_lit_1 1_call_1 
+1_r>_2 2_r>_3 3_rot_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_2>r_1 1_call_1 
+1_call_1 
+1_2r>_1 1_call_1 
+1_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_;s_1 
+1_noop_2 2_tuck_2 2_2>r_0 0_noop_1 1_call_1 
+1_call_1 
+1_2r>_1 1_call_1 
+1_call_1 
+1_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_;s_1 
+1_>r_1 1_;s_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_drop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_@_2 2_0<_2 2_?branch_1 1_lit_@_1 1_lit_!_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_call_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_0<>_1 1_;s_1 
+1_call_1 
+1_0=_1 1_;s_1 
+1_noop_2 2_0=_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_lit_@_1 1_lit_!_1 1_lit_2 2_lit_3 3_!_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_0=_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_;s_1 
+1_;s_1 
+1_does-exec_1 
+1_@_1 1_-rot_3 3_(do)_1 
+1_i_2 2_useraddr_3 3_!_1 1_dup_2 2_>r_1 1_does-exec_1 
+1_!_1 1_call_1 
+1_noop_0 0_r>_1 1_swap_2 2_(+loop)_1 1_unloop_1 1_drop_1 1_;s_1 
+1_2dup_3 3_=_2 2_?branch_1 1_2drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_rdrop_1 1_;s_1 
+1_noop_0 0_lit_1 1_rdrop_1 1_;s_1 
+1_noop_0 0_lit_1 1_swap_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_rdrop_1 1_;s_1 
+1_useraddr_@_1 1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_;s_1 
+1_does-exec_1 
+1_@_1 1_>r_1 
+1_noop_0 0_i_1 1_does-exec_1 
+1_!_1 1_call_1 
+1_noop_2 2_?branch_1 1_rdrop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_rdrop_1 1_;s_1 
+1_noop_2 2_0=_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit@_1 1_rdrop_1 1_lit_2 2_lit_3 3_+!_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_max_1 1_lit_@_1 1_min_1 1_dup_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_i_2 2_-_1 1_pick_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_(for)_1 
+1_lit_2 2_lit_3 3_+!_1 1_lit_2 2_@_2 2_0<_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_dup_1 1_c@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_char+_1 1_(next)_1 1_unloop_1 1_;s_1 
+1_lit_@_1 1_call_1 
+1_(?do)_1 
+1_noop_0 0_i_1 1_c@_1 1_dup_2 2_lit_3 3_lit@_4 4_within_2 2_?branch_1 1_drop_0 0_lit_1 
+1_lit-perform_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_lit_2 2_lit_3 3_+!_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_i'_2 2_i_3 3_-_2 2_lit_3 3_min_2 2_lit_3 3_!_1 1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_lit_+_1 1_lit_2 2_(+loop)_1 
+1_unloop_1 1_drop_0 0_r>_1 1_useraddr_!_1 1_;s_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_form_1 1_drop_1 1_;s_1 
+1_form_1 1_nip_1 1_;s_1 
+1_lit+_1 1_noop_0 0_lit_1 1_swap_1 1_call_1 
+1_@_1 1_dup_2 2_?branch_1 1_2dup_1 1_call_1 
+1_nip_1 1_lit_+_1 1_dup_2 2_>r_1 1_+_1 1_call_1 
+1_>=_1 1_noop_2 2_?branch_1 1_call_1 
+1_nip_1 1_noop_0 0_lit_1 1_swap_1 
+1_dup_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_r>_2 2_rot_3 3_+_2 2_noop_1 1_swap_1 1_branch_1 
+1_2drop_1 1_;s_1 
+1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_@_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_;s_1 
+1_useraddr_!_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_r>_1 1_swap_2 2_>r_1 1_sp@_1 1_>r_1 1_fp@_1 1_>r_1 1_call_1 
+1_>r_1 1_useraddr_2 2_@_2 2_>r_1 1_rp@_1 1_useraddr_!_1 1_>r_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_>r_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_r>_2 2_r>_3 3_useraddr_4 4_!_2 2_rdrop_2 2_rdrop_2 2_rdrop_2 2_rdrop_2 2_>r_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 1_nip_1 
+1_call_1 
+1_;s_1 
+1_?dup_1 1_noop_2 2_?branch_1 
+1_lit_2 2_@_2 2_?branch_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_?dup-0=-?branch_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(bye)_1 
+1_(throw1)_1 
+1_;s_1 
+1_noop_2 2_1-_2 2_tuck_2 2_+_1 1_swap_2 2_invert_2 2_and_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_drop_1 1_;s_1 
+1_swap_2 2_rot_3 3_noop_0 0_over_1 1_call_1 
+1_dup_1 1_call_1 
+1_noop_2 2_rot_3 3_+_2 2_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_over_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_drop_1 1_call_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_-_1 1_call_1 
+1_;s_1 
+1_tuck_1 1_call_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_;s_1 
+1_nip_1 1_allocate_1 1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_lit_@_1 1_;s_1 
+1_lit_!_;s_1 
+1_noop_0 0_lit@_1 1_dup_2 2_@_2 2_cells_2 2_+_1 1_;s_1 
+1_lit@_2 2_!_0 0_noop_1 1_;s_1 
+1_lit-perform_1 
+1_@_1 1_lit_!_;s_1 
+1_call_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_dup_1 1_lit+_1 1_lit_!_1 1_dup_1 1_call_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit@_1 1_lit+_1 1_@_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_drop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_!_;s_1 
+1_dup_1 1_lit@_2 2_>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_dup_2 2_lit@_3 3_>_2 2_?branch_1 
+1_dup_1 1_lit@_2 2_2*_2 2_dup_3 3_noop_0 0_lit_1 1_call_1 
+1_<=_1 1_noop_2 2_?branch_1 1_lit@_2 2_noop_0 0_lit@_1 1_1+_1 1_cells_1 1_resize_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_@_1 1_1+_1 1_dup_1 1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_!_;s_1 
+1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_@_1 1_1-_1 1_dup_1 1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_drop_1 1_lit_2 2_lit@_3 3_@_3 3_(-do)_1 
+1_2dup_1 1_noop_0 0_lit@_1 1_i_2 2_cells_2 2_+_1 1_@_1 1_call_1 
+1_dup_2 2_?branch_1 1_nip_1 1_nip_1 1_unloop_1 1_;s_1 
+1_drop_0 0_lit_1 1_(-loop)_1 
+1_unloop_1 1_2drop_0 0_lit_1 1_;s_1 
+1_drop_1 1_lit@_2 2_?branch_1 1_2dup_1 1_noop_0 0_lit@_1 1_call_1 
+1_dup_2 2_?branch_1 1_nip_1 1_nip_1 1_;s_1 
+1_drop_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_does-exec_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit@_2 2_over_3 3_noop_0 0_lit@_1 1_@_1 1_1+_1 1_cells_1 1_dup_1 1_call_1 
+1_move_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit@_2 2_@_2 2_lit_3 3_max_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit@_1 1_1+_1 1_cells_1 1_allocate_1 1_lit-perform_1 
+1_lit@_2 2_over_3 3_noop_0 0_lit@_1 1_@_1 1_1+_1 1_cells_1 1_move_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_1 1_;s_1 
+1_lit@_2 2_@_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_lit@_1 1_cell+_1 1_i_2 2_cells_2 2_+_1 1_@_1 1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit@_1 1_@_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_dup_1 1_call_1 
+1_lit_2 2_swap_3 3_(-do)_1 
+1_lit@_2 2_i_3 3_cells_3 3_+_2 2_!_0 0_lit_1 1_(-loop)_1 
+1_unloop_1 1_;s_1 
+1_lit-perform_1 
+1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_dup_2 2_>r_1 1_does-exec_1 
+1_nip_1 1_+_1 1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_call_1 
+1_dup_@_1 1_call_1 
+1_=_1 1_swap_2 2_lit+_2 2_@_2 2_i_3 3_=_2 2_and_1 1_noop_2 2_?branch_1 1_call_1 
+1_rdrop_1 1_;s_1 
+1_drop_0 0_r>_1 1_lit+_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_call_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_does-exec_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_lit_2 2_lit+_2 2_-_1 1_call_1 
+1_branch_1 
+1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_noop_0 0_lit_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_lit_2 2_/_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_/_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_/_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_noop_0 0_over_1 1_@_1 1_call_1 
+1_swap_2 2_!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_call_1 
+1_lit_@_1 1_lit_2 2_lit_3 3_+!_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_>r_1 1_call_1 
+1_>r_1 1_abs_1 1_-rot_1 1_call_1 
+1_r>_2 2_xor_1 1_r>_2 2_swap_3 3_>r_2 2_>r_1 1_call_1 
+1_noop_2 2_rot_3 3_noop_2 2_tuck_2 2_um*_2 2_2swap_4 4_um*_4 4_swap_4 4_>r_3 3_lit_4 4_d+_2 2_r>_3 3_-rot_2 2_noop_0 0_i_1 1_um/mod_1 1_-rot_1 1_noop_0 0_r>_1 1_um/mod_1 1_-rot_1 1_r>_2 2_?branch_1 1_noop_2 2_?branch_1 1_noop_2 2_lit_3 3_lit_4 4_d+_2 2_noop_1 
+1_dnegate_1 1_branch_1 
+1_drop_1 
+1_;s_1 
+1_1+_1 1_>r_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_drop_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_noop_2 2_execute_1 
+1_branch_1 
+1_lit-perform_1 
+1_;s_1 
+1_char+_1 1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_fill_1 1_;s_1 
+1_noop_0 0_lit_1 1_fill_1 1_;s_1 
+1_2>r_1 1_2dup_1 
+1_dup_2 2_i_3 3_>=_2 2_?branch_1 1_2dup_1 1_2r@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_4 4_2swap_2 2_2drop_0 0_2r>_2 2_2drop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_/string_1 1_branch_1 
+1_2drop_0 0_2r>_2 2_2drop_0 0_lit_1 1_;s_1 
+1_lit-perform_1 
+1_lit_2 2_rot_3 3_noop_0 0_over_1 
+1_lit-perform_1 
+1_call_1 
+1_>r_1 1_2over_3 3_=_2 2_r>_3 3_or_2 2_?branch_1 1_noop_0 0_lit_1 1_pick_1 1_swap_1 1_/string_1 1_lit-perform_1 
+1_nip_1 1_lit_!_;s_1 
+1_lit_@_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_lit_@_1 1_call_1 
+1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_lit_2 2_lit+_2 2_-_1 1_lit+_1 1_@_1 1_call_1 
+1_branch_1 
+1_drop_0 0_lit_1 1_@_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_compile-prim1_1 1_finish-code_1 1_;s_1 
+1_lit_@_1 1_over_2 2_@_2 2_min_1 1_lit_!_1 1_cell+_1 1_dup_@_1 1_swap_1 1_cell+_1 1_dup_@_1 1_lit_!_1 1_cell+_1 1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_over_2 2_@_2 2_over_3 3_lit_4 4_lit+_4 4_-_3 3_lit+_3 3_!_1 1_swap_1 1_cell+_1 1_swap_1 1_branch_1 
+1_drop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_lit_2 2_lit+_2 2_-_1 1_call_1 
+1_branch_1 
+1_drop_0 0_dup_1 1_cell+_1 1_@_1 1_forget-dyncode_1 1_drop_1 1_@_1 1_lit_!_1 1_call_1 
+1_noop_2 2_!_0 0_lit_1 1_lit@_2 2_@_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_lit@_1 1_cell+_1 1_i_2 2_cells_2 2_+_1 1_@_1 1_dup_1 1_call_1 
+1_>_1 1_noop_2 2_?branch_1 1_drop_1 1_branch_1 
+1_swap_1 1_1+_1 
+1_(loop)_1 
+1_unloop_1 1_dup_2 2_0=_2 2_or_1 1_call_1 
+1_call_1 
+1_call_1 
+1_>_1 1_noop_2 2_?branch_1 1_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_allocate_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_(hashkey1)_1 1_;s_1 
+1_dup_@_1 1_noop_0 0_lit_1 1_pick_1 1_!_1 1_!_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_@_1 1_?dup_1 1_noop_2 2_0=_2 2_?branch_1 1_noop_0 0_2dup_2 2_*_1 1_call_1 
+1_over_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_noop_0 0_lit_1 1_pick_1 1_call_1 
+1_noop_0 0_lit_1 1_pick_1 1_+_1 1_(loop)_1 
+1_unloop_1 1_drop_1 1_branch_1 
+1_>r_1 1_drop_1 1_i_2 2_@_2 2_rot_3 3_!_1 1_noop_0 0_i_1 1_swap_1 1_call_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_lit+_1 1_@_1 1_-rot_1 1_call_1 
+1_xor_1 1_cells_1 1_lit@_2 2_+_1 1_;s_1 
+1_>r_0 0_2dup_2 2_noop_0 0_r>_1 1_call_1 
+1_@_1 1_(hashlfind)_1 1_;s_1 
+1_dup_@_1 1_dup_2 2_?branch_1 1_nip_1 1_branch_1 
+1_drop_1 1_!_;s_1 
+1_noop_0 0_over_1 1_call_1 
+1_rot_1 1_call_1 
+1_>r_0 0_lit_1 1_lit_2 2_cells_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_tuck_2 2_cell+_2 2_!_0 0_r>_1 1_lit_2 2_@_2 2_?branch_1 1_dup_@_1 1_noop_0 0_lit_1 1_pick_1 1_!_1 1_!_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit_2 2_+!_0 0_lit_1 1_lit-perform_1 
+1_drop_1 1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit+_1 1_lit_@_1 1_>r_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_over_2 2_!_0 0_noop_1 1_lit_2 2_cells_2 2_-_1 1_dup_1 1_lit+_1 
+1_@_1 1_dup_2 2_?branch_1 1_2dup_1 1_swap_1 1_call_1 
+1_branch_1 
+1_2drop_0 0_r>_1 1_lit_!_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_lit_2 2_lit+_2 2_-_1 1_dup_2 2_lit+_2 2_@_2 2_lit+_2 2_@_2 2_lit_3 3_=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_1 
+1_branch_1 
+1_drop_1 1_;s_1 
+1_lit@_2 2_noop_0 0_lit@_1 1_cells_1 1_call_1 
+1_(do)_1 
+1_noop_0 0_i_1 1_@_1 
+1_dup_2 2_?branch_1 1_dup_@_1 1_swap_2 2_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_i_2 2_!_0 0_noop_1 1_lit_2 2_(+loop)_1 1_noop_0 0_unloop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_lit_2 2_lit+_2 2_-_1 1_dup_2 2_lit+_2 2_@_2 2_lit@_3 3_=_2 2_?branch_1 1_lit_2 2_swap_3 3_lit+_3 3_!_1 1_branch_1 
+1_drop_1 
+1_branch_1 
+1_drop_1 1_;s_1 
+1_drop_1 1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit+_2 2_@_2 2_0=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_lit@_2 2_>r_1 1_call_1 
+1_lit_2 2_lit@_3 3_1+_3 3_dup_4 4_noop_0 0_lit_1 1_call_1 
+1_lshift_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_r>_1 1_free_1 1_>r_0 0_lit_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_lit-perform_1 
+1_;s_1 
+1_lit@_2 2_0=_2 2_?branch_1 1_noop_0 0_lit@_1 1_cells_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit@_2 2_noop_0 0_lit@_1 1_cells_1 1_call_1 
+1_lit_@_1 1_swap_2 2_lit_3 3_+!_1 1_lit_2 2_@_2 2_lit@_3 3_>=_2 2_lit_3 3_@_3 3_lit@_4 4_2*_4 4_>=_3 3_or_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_lit@_2 2_swap_3 3_lit+_3 3_!_1 1_;s_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit+_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_noop_0 0_lit@_1 1_lit@_2 2_lit_3 3_(do)_1 
+1_call_1 
+1_i_2 2_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_i_2 2_cells_2 2_+_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_cell+_1 1_@_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_drop_1 1_(loop)_1 1_unloop_1 1_drop_0 0_r>_1 1_useraddr_!_1 1_;s_1 
+1_call_1 
+1_dup_1 1_sfaligned_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_lit_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_call_1 
+1_dup_1 1_dfaligned_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_lit_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_floats_1 1_call_1 
+1_f!_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_f@_1 1_;s_1 
+1_useraddr_@_1 1_fp@_1 1_-_1 1_lit_2 2_/_1 1_;s_1 
+1_call_1 
+1_cell+_1 1_cell+_1 1_dup_1 1_faligned_1 1_<>_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_>r_1 1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit@_2 2_-_1 1_noop_0 0_lit@_1 1_;s_1 
+1_noop_2 2_lit_3 3_max_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_dup_2 2_?branch_1 1_1-_1 1_2dup_3 3_+_2 2_c@_2 2_lit_3 3_<>_2 2_?branch_1 1_1+_1 
+1_;s_1 
+1_call_1 
+1_represent_1 1_noop_2 2_0=_2 2_?branch_1 1_2drop_1 1_call_1 
+1_lit_2 2_min_1 1_lit-perform_1 
+1_rdrop_1 1_;s_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_dup_2 2_>r_1 1_0<=_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_call_1 
+1_i_2 2_min_1 1_lit-perform_1 
+1_noop_0 0_i_1 1_lit@_2 2_-_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_i_1 1_negate_1 1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_lit_2 2_max_1 1_/string_1 1_lit_2 2_max_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_1-_1 1_call_1 
+1_noop_0 0_lit_1 1_fm/mod_1 1_lit_2 2_*_1 1_>r_1 1_1+_1 1_>r_1 1_call_1 
+1_i_2 2_tuck_2 2_min_1 1_noop_2 2_tuck_2 2_-_1 1_>r_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_r>_1 1_/string_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_1-_1 1_call_1 
+1_noop_0 0_over_1 1_c@_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_/string_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_2dup_1 1_noop_0 0_lit_1 1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_2drop_0 0_2dup_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_nip_2 2_?branch_1 1_>float_1 1_branch_1 
+1_2drop_0 0_lit_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_2drop_0 0_lit_1 1_noop_0 0_lit_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_2drop_0 0_lit_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_f@_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_f@_1 1_f*_1 1_;s_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_f@_1 1_f*_1 1_;s_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_f@_1 1_fswap_1 1_f/_1 1_;s_1 
+1_frot_1 1_frot_1 1_f-_1 1_fabs_1 1_fswap_1 1_f<_1 1_;s_1 
+1_frot_1 1_frot_1 1_fover_1 1_fabs_1 1_fover_1 1_fabs_1 1_f+_1 1_frot_1 1_frot_1 1_f-_1 1_fabs_1 1_frot_1 1_frot_1 1_f*_1 1_f<_1 1_;s_1 
+1_fdup_1 1_f0=_1 1_noop_2 2_?branch_1 1_fp@_1 1_float+_1 1_noop_0 0_lit_1 1_floats_1 1_over_2 2_float+_2 2_over_1 1_call_1 
+1_fdrop_1 1_fdrop_1 1_fdrop_1 1_;s_1 
+1_fdup_1 1_f0>_1 1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_fnegate_1 1_call_1 
+1_;s_1 
+1_fp@_1 1_lit_+_1 1_dup_2 2_c@_2 2_lit_3 3_and_2 2_>r_1 1_float+_1 1_dup_1 1_c@_1 1_lit_2 2_and_1 1_r>_2 2_or_1 1_swap_2 2_c!_0 0_noop_1 1_fdrop_1 1_;s_1 
+1_fdup_1 1_fabs_1 1_floor_1 1_fswap_1 1_call_1 
+1_;s_1 
+1_fover_1 1_fover_1 1_f/_1 1_call_1 
+1_f*_1 1_f-_1 1_;s_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_cells_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_cells_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_cells_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_dup_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_drop_1 
+1_;s_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_floats_1 1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_dup_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_drop_1 
+1_;s_1 
+1_dup_2 2_negate_2 2_useraddr_3 3_+!_1 1_lit_2 2_over_3 3_=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_cells_2 2_over_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_floats_1 1_noop_2 2_over_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_floats_1 1_noop_2 2_over_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_call_1 
+1_drop_1 1_;s_1 
+1_useraddr_@_1 1_swap_2 2_-_1 1_call_1 
+1_;s_1 
+1_aligned_1 1_dup_1 1_call_1 
+1_;s_1 
+1_faligned_1 1_dup_1 1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_cell+_1 1_dup_1 1_useraddr_!_1 1_swap_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_2dup_3 3_u<>_2 2_?branch_1 1_2dup_3 3_u>_2 2_?branch_1 1_swap_1 
+1_@_1 1_branch_1 
+1_drop_1 1_;s_1 
+1_2dup_3 3_u<_2 2_?branch_1 1_@_1 1_branch_1 
+1_=_1 1_;s_1 
+1_noop_0 0_lit_1 
+1_over_2 2_0<>_2 2_?branch_1 1_noop_0 0_over_1 1_call_1 
+1_lit+_1 1_@_1 1_max_1 1_swap_1 1_@_1 1_swap_1 1_branch_1 
+1_faligned_1 1_nip_1 1_;s_1 
+1_dup_1 1_lit_!_1 1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_lit_@_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_float+_1 1_dup_1 1_useraddr_!_1 1_swap_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_useraddr_@_1 1_call_1 
+1_cell+_1 1_cell+_1 1_dup_1 1_useraddr_!_1 1_swap_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_swap_2 2_!_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_swap_2 2_-_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_drop_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_!_1 1_lit_2 2_useraddr_3 3_!_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_swap_1 1_1+_1 1_call_1 
+1_call_1 
+1_does-exec_1 
+1_call_1 
+1_does-exec_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_@_1 1_useraddr_!_1 
+1_dup_2 2_?branch_1 1_noop_2 2_execute_1 
+1_branch_1 
+1_drop_0 0_useraddr_1 1_@_1 1_call_1 
+1_useraddr_!_1 1_call_1 
+1_call_1 
+1_call_1 
+1_useraddr_!_1 1_lit_2 2_lit_3 3_lit+_3 3_-_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_2drop_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_lit_@_1 1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_lit_!_;s_1 
+1_call_1 
+1_drop_1 1_call_1 
+1_;s_1 
+1_noop_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_useraddr_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_!_1 1_useraddr_!_1 1_noop_1 1_;s_1 
+1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_call_1 
+1_drop_1 1_branch_1 
+1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_noop_0 0_over_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_lit_@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_over_1 1_call_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_>r_1 1_>r_0 0_useraddr_1 1_@_1 1_noop_0 0_lit_1 1_pick_1 1_call_1 
+1_-_1 1_dup_2 2_?branch_1 1_noop_0 0_r>_1 1_drop_0 0_r>_1 1_lit-perform_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_drop_0 0_r>_1 1_lit-perform_1 
+1_call_1 
+1_r>_2 2_drop_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_?dup-?branch_1 
+1_nip_1 1_lit_2 2_or_1 1_branch_1 
+1_@_1 
+1_;s_1 
+1_over_2 2_lit_3 3_and_2 2_?branch_1 1_swap_1 1_lit_2 2_and_1 1_call_1 
+1_branch_1 
+1_!_1 
+1_;s_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_lit+_1 1_!_1 1_branch_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_drop_0 0_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_lit+_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_lit+_1 1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_lit+_1 1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_lit+_1 1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_lit+_1 1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_drop_1 
+1_;s_1 
+1_lit-perform_1 
+1_2dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_sp@_1 1_useraddr_!_1 1_;s_1 
+1_sp@_1 1_useraddr_2 2_@_2 2_<>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_2over_3 3_2over_5 5_noop_1 1_d>_1 1_noop_2 2_?branch_1 1_2swap_1 
+1_2drop_1 1_;s_1 
+1_2over_3 3_2over_5 5_noop_1 1_d<_1 1_noop_2 2_?branch_1 1_2swap_1 
+1_2drop_1 1_;s_1 
+1_(system)_1 1_lit-perform_1 
+1_lit_!_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_useraddr_@_1 1_swap_2 2_-_1 1_lit_2 2_@_2 2_u<_1 1_;s_1 
+1_?dup-?branch_1 
+1_swap_2 2_>r_1 1_1-_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_;s_1 
+1_?dup-?branch_1 
+1_f>l_1 1_1-_1 1_call_1 
+1_f@local0_1 1_call_1 
+1_lp+_1 
+1_;s_1 
+1_>l_1 1_>l_1 1_>l_1 1_lp-_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_@local2_1 1_call_1 
+1_noop_0 0_@local1_1 1_call_1 
+1_@local3_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_>r_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_r>_2 2_cell+_2 2_!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_open-file_1 1_lit-perform_1 
+1_>r_0 0_i_1 1_file-size_1 1_lit-perform_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_dup_1 1_allocate_1 1_lit-perform_1 
+1_swap_2 2_2dup_2 2_noop_0 0_i_1 1_read-file_1 1_lit-perform_1 
+1_noop_2 2_over_3 3_<>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_r>_1 1_close-file_1 1_lit-perform_1 
+1_;s_1 
+1_>l_0 0_lp-_0 0_lit_1 1_noop_0 0_lit_1 
+1_dup_1 1_lit_+_1 1_dup_2 2_>r_1 1_call_1 
+1_noop_2 2_rot_3 3_i_4 4_noop_0 0_@local1_1 1_read-file_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_2dup_3 3_=_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_-_1 1_+_1 1_dup_2 2_>r_1 1_resize_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_lp+_1 1_;s_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_nip_1 1_nip_1 1_call_1 
+1_2dup_1 1_lit_2 2_noop_0 0_lit_1 1_d=_1 1_noop_2 2_?branch_1 1_2drop_0 0_lit_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_branch_1 
+1_drop_1 1_2dup_3 3_2>r_1 1_call_1 
+1_dup_2 2_?branch_1 1_noop_2 2_0>_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_2rdrop_1 1_branch_1 
+1_drop_1 1_2r>_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_useraddr_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_>r_0 0_over_1 1_min_1 1_noop_2 2_dup_3 3_>r_2 2_rot_3 3_dup_4 4_>r_3 3_dup_4 4_2swap_2 2_noop_1 1_/string_1 1_cmove>_1 1_r>_2 2_r>_3 3_noop_0 0_r>_1 1_fill_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_1 1_>l_1 1_>l_1 1_lp-_1 1_f>l_1 1_@local3_1 1_@local#_2 2_@local#_3 3_/string_2 2_noop_0 0_lit_1 1_fill_1 1_f@local0_1 1_@local3_1 1_noop_0 0_@local#_1 1_represent_1 1_noop_2 2_?branch_1 1_>l_1 1_>l_0 0_@local#_1 1_@local0_2 2_+_1 1_@local#_2 2_>=_1 1_noop_0 0_@local#_1 1_@local#_2 2_-_1 1_1-_1 1_dup_2 2_>l_1 1_lp-_1 1_@local3_1 1_+_1 1_@local2_2 2_lit_3 3_max_2 2_>=_1 1_and_1 1_noop_2 2_?branch_1 1_@local#_2 2_@local#_3 3_noop_0 0_@local1_1 1_@local2_2 2_-_1 1_dup_1 1_>l_0 0_lp-_0 0_lit_1 1_call_1 
+1_@local1_2 2_1+_2 2_@local#_3 3_>=_2 2_?branch_1 1_f@local#_1 1_fabs_1 1_call_1 
+1_noop_1 1_branch_1 
+1_noop_0 0_lit_1 1_f@_1 1_noop_0 0_@local#_1 1_call_1 
+1_d>f_1 1_f**_1 1_f>_1 1_noop_2 2_?branch_1 1_lit_2 2_@local#_3 3_@local1_4 4_+_3 3_1-_3 3_c!_1 
+1_noop_0 0_@local#_1 1_@local3_1 1_1-_1 1_@local1_2 2_min_1 1_dup_2 2_>l_1 1_lp-_1 1_lit_2 2_max_1 1_noop_0 0_lit_1 1_fill_1 1_@local#_2 2_?branch_1 1_lit_2 2_@local#_3 3_@local1_4 4_1-_4 4_lit_5 5_max_4 4_+_3 3_c!_1 
+1_@local#_2 2_@local#_3 3_@local#_4 4_/string_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_@local#_1 1_@local#_2 2_+_1 1_branch_1 
+1_@local#_2 2_@local#_3 3_lit_4 4_/string_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_@local3_1 1_noop_2 2_?branch_1 1_@local#_2 2_@local#_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_@local2_1 1_1-_1 1_call_1 
+1_tuck_1 1_call_1 
+1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_>l_1 1_lp-_1 1_@local#_2 2_@local1_3 3_-_2 2_1-_2 2_@local#_3 3_+_2 2_>l_1 1_lp-_1 1_@local1_2 2_0<_2 2_?branch_1 1_drop_0 0_@local#_1 1_@local#_2 2_noop_0 0_lit_1 1_fill_1 1_branch_1 
+1_@local#_2 2_@local#_3 3_+_2 2_noop_0 0_lit_1 1_@local3_1 1_negate_1 1_/string_1 1_move_1 
+1_call_1 
+1_noop_0 0_@local1_1 
+1_lp+2_1 1_branch_1 
+1_noop_2 2_?branch_1 1_@local3_1 1_@local#_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_drop_0 0_@local#_1 1_lp+!#_1 
+1_lp+2_1 1_lit_2 2_max_1 1_@local#_2 2_min_1 1_lp+!#_1 1_;s_1 
+1_swap_1 1_lit_2 2_max_1 1_swap_1 1_lit_2 2_max_1 1_fdup_1 1_2over_3 3_2over_5 5_noop_0 0_lit_1 1_pick_1 1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_rot_1 1_lit_@_1 1_1-_1 1_lit_2 2_rot_3 3_negate_3 3_/string_2 2_over_1 1_lit_2 2_u<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_2tuck_1 1_2>r_1 1_call_1 
+1_2r>_1 1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_max_1 1_lit_@_1 1_min_1 1_dup_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_i_2 2_-_1 1_1-_1 1_floats_1 1_fp@_1 1_+_1 1_f@_1 1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_(loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_max_1 1_call_1 
+1_(?do)_1 
+1_i_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_lit-perform_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_lit@_2 2_>l_1 1_lp-_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_lit_!_1 1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 
+1_@local1_2 2_lit_3 3_!_1 1_call_1 
+1_lit-perform_1 
+1_lp+_1 1_;s_1 
+1_lit@_2 2_>l_1 1_lp-_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_lit_!_1 1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 
+1_@local1_2 2_lit_3 3_!_1 1_call_1 
+1_lit-perform_1 
+1_lp+_1 1_;s_1 
+1_useraddr_2 2_@_2 2_>l_1 1_lp-_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_useraddr_!_1 1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 
+1_@local1_2 2_useraddr_3 3_!_1 1_call_1 
+1_lit-perform_1 
+1_lp+_1 1_;s_1 
+1_cells_1 1_+_1 1_;s_1 
+1_does-exec_1 
+1_dup_2 2_0>_2 2_?branch_1 1_>r_0 0_i_1 1_file-size_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_reposition-file_1 1_lit-perform_1 
+1_does-exec_1 
+1_noop_2 2_0=_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_does-exec_1 
+1_2dup_3 3_>r_2 2_>r_1 1_does-exec_1 
+1_noop_4 4_@_4 4_over_5 5_min_4 4_/string_3 3_rot_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_(parse-white)_1 1_branch_1 
+1_call_1 
+1_noop_0 0_2dup_2 2_+_1 1_r>_2 2_-_1 1_1+_1 1_r>_2 2_min_1 1_does-exec_1 
+1_!_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_count_2 2_+_1 1_c!_1 1_call_1 
+1_;s_1 
+1_threading-method_1 1_noop_2 2_0=_2 2_?branch_1 1_@_1 
+1_;s_1 
+1_swap_1 1_>r_0 0_lit_1 1_swap_1 
+1_@_1 1_dup_2 2_?branch_1 1_dup_1 1_call_1 
+1_noop_2 2_i_3 3_=_2 2_?branch_1 1_nip_1 1_dup_1 
+1_branch_1 
+1_drop_1 1_rdrop_1 1_;s_1 
+1_decompile-prim_1 1_>r_0 0_lit_1 
+1_dup_2 2_@_2 2_?branch_1 1_dup_1 1_call_1 
+1_noop_2 2_i_3 3_=_2 2_?branch_1 1_rdrop_1 1_;s_1 
+1_cell+_1 1_branch_1 
+1_drop_0 0_rdrop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_dup_1 1_lit_2 2_<>_1 1_branch_1 
+1_call_1 
+1_dup_1 1_0<>_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_and_1 1_;s_1 
+1_dup_2 2_cell+_2 2_@_2 2_lit_3 3_and_2 2_0=_2 2_?branch_1 1_call_1 
+1_@_1 1_call_1 
+1_branch_1 
+1_drop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_@_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_@_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_@_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_0<>_1 1_;s_1 
+1_call_1 
+1_@_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_@_1 1_call_1 
+1_=_1 1_;s_1 
+1_call_1 
+1_0=_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 
+1_dup_@_1 1_dup_2 2_?branch_1 1_swap_1 1_lit_2 2_cells_2 2_+_1 1_swap_2 2_noop_0 0_lit_1 1_pick_1 1_swap_2 2_execute_1 
+1_noop_2 2_?branch_1 1_lit_2 2_cells_2 2_-_1 1_@_1 1_nip_1 1_branch_1 
+1_2drop_1 1_drop_0 0_lit_1 
+1_;s_1 
+1_useraddr_@_1 1_swap_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_1+_1 1_swap_1 1_1+_1 1_swap_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_over_2 2_lit_3 3_+!_1 1_swap_1 1_move_1 1_;s_1 
+1_lit_2 2_@_2 2_c!_0 0_noop_1 1_lit_2 2_lit_3 3_+!_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_!_0 0_lit_1 1_call_1 
+1_lit_!_1 1_lit_2 2_lit_3 3_!_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_noop_0 0_lit_1 1_call_1 
+1_lit_@_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_lit_2 2_-_1 1_;s_1 
+1_dup_2 2_lit@_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_>r_1 
+1_2dup_3 3_u>=_2 2_?branch_1 1_lit_2 2_lshift_1 1_r>_2 2_1+_2 2_>r_1 1_dup_2 2_0=_2 2_?branch_1 
+1_2drop_0 0_r>_1 1_;s_1 
+1_count_1 1_dup_2 2_lit@_3 3_u<_2 2_?branch_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_and_1 1_lit_2 2_>r_1 
+1_dup_2 2_i_3 3_and_2 2_?branch_1 1_i_2 2_xor_1 1_lit_2 2_lshift_1 1_r>_2 2_lit_3 3_lshift_2 2_>r_1 1_>r_1 1_count_1 1_dup_2 2_lit_3 3_and_2 2_lit_3 3_<>_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_and_1 1_r>_2 2_or_1 1_branch_1 
+1_rdrop_1 1_;s_1 
+1_over_2 2_lit@_3 3_u<_2 2_?branch_1 1_noop_2 2_tuck_2 2_c!_0 0_noop_1 1_1+_1 1_;s_1 
+1_>r_0 0_lit_1 1_swap_2 2_noop_0 0_lit_1 
+1_2dup_3 3_u>_2 2_?branch_1 1_2/_1 1_>r_0 0_dup_1 1_lit_2 2_and_1 1_lit_2 2_or_1 1_swap_2 2_noop_0 0_lit_1 1_rshift_1 1_noop_0 0_r>_1 1_branch_1 
+1_lit_2 2_xor_1 1_2*_1 1_or_1 1_noop_0 0_r>_1 
+1_over_2 2_lit_3 3_u>=_2 2_?branch_1 1_noop_2 2_tuck_2 2_c!_0 0_noop_1 1_1+_1 1_branch_1 
+1_nip_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<=_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_over_2 2_+_1 1_>r_1 1_call_1 
+1_swap_2 2_noop_0 0_r>_1 1_over_2 2_-_1 1_;s_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_1-_1 1_dup_2 2_c@_2 2_lit_3 3_and_2 2_lit@_3 3_<>_2 2_?branch_1 1_;s_1 
+1_lit-perform_1 
+1_dup_2 2_lit@_3 3_u<_2 2_?branch_1 1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_and_1 1_lit_2 2_>r_1 
+1_dup_2 2_i_3 3_and_2 2_?branch_1 1_i_2 2_xor_1 1_lit_2 2_lshift_1 1_r>_2 2_lit_3 3_lshift_2 2_>r_1 1_>r_1 1_lit-perform_1 
+1_dup_2 2_lit_3 3_and_2 2_lit_3 3_<>_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_and_1 1_r>_2 2_or_1 1_branch_1 
+1_rdrop_1 1_;s_1 
+1_dup_2 2_lit@_3 3_u<_2 2_?branch_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_swap_2 2_noop_0 0_lit_1 
+1_2dup_3 3_u>_2 2_?branch_1 1_2/_1 1_>r_0 0_dup_1 1_lit_2 2_and_1 1_lit_2 2_or_1 1_swap_2 2_noop_0 0_lit_1 1_rshift_1 1_noop_0 0_r>_1 1_branch_1 
+1_lit_2 2_xor_1 1_2*_1 1_or_1 
+1_dup_2 2_lit_3 3_u>=_2 2_?branch_1 1_lit-perform_1 
+1_branch_1 
+1_drop_1 1_;s_1 
+1_noop_0 0_over_1 1_dup_1 1_call_1 
+1_swap_2 2_-_1 1_/string_1 1_;s_1 
+1_over_2 2_+_1 1_call_1 
+1_over_2 2_-_1 1_;s_1 
+1_call_1 
+1_nip_1 1_;s_1 
+1_>r_0 0_over_1 1_call_1 
+1_i_2 2_over_3 3_u<_2 2_?branch_1 1_drop_1 1_nip_1 1_r>_2 2_noop_0 0_lit_1 1_branch_1 
+1_>r_1 1_call_1 
+1_r>_2 2_r>_3 3_swap_2 2_-_1 1_noop_0 0_lit_1 
+1_;s_1 
+1_drop_1 1_c@_1 1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_dup_2 2_lit_3 3_u<_2 2_?branch_1 1_drop_0 0_lit_1 1_;s_1 
+1_drop_0 0_lit_1 1_;s_1 
+1_noop_0 0_2dup_2 2_+_1 1_dup_1 1_call_1 
+1_2dup_1 1_dup_2 2_over_1 1_over_2 2_-_1 1_call_1 
+1_+_1 1_=_1 1_noop_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_nip_1 1_nip_1 1_over_2 2_-_1 
+1_;s_1 
+1_lit_2 2_rot_3 3_rot_1 1_over_2 2_+_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_i_1 1_lit-perform_1 
+1_swap_2 2_>r_1 1_wcwidth_1 1_+_1 1_r>_2 2_i_3 3_-_2 2_(+loop)_1 
+1_unloop_1 1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_getenv_1 1_2dup_1 1_d0=_1 1_noop_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_getenv_1 1_2dup_1 1_d0=_1 1_noop_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_getenv_1 1_2dup_1 1_d0=_1 1_noop_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_nip_2 2_nip_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_lit@_2 2_lit_3 3_=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 
+1_;s_1 
+1_lit@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_toupper_1 1_lit_2 2_xor_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_over_2 2_noop_0 0_lit_1 1_pick_1 1_noop_0 0_lit_1 1_pick_1 1_/string_1 1_;s_1 
+1_cells_1 1_lit_+_1 1_!_;s_1 
+1_2dup_1 1_noop_0 0_lit_1 1_open-file_1 1_noop_2 2_?branch_1 1_drop_0 0_lit_1 1_create-file_1 1_lit-perform_1 
+1_branch_1 
+1_nip_1 1_nip_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_getenv_1 1_dup_2 2_0=_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit_!_;s_1 
+1_drop_0 0_lit_1 1_@_1 1_lit-perform_1 
+1_over_2 2_over_1 1_swap_1 1_lit-perform_1 
+1_dup_1 1_does-exec_1 
+1_lit-perform_1 
+1_nip_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit@_1 1_file-position_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit@_1 1_reposition-file_1 1_drop_1 1_;s_1 
+1_swap_2 2_noop_0 0_lit@_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_2@_3 3_2dup_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_2dup_1 1_call_1 
+1_drop_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_tuck_1 1_2dup_1 1_lit-perform_1 
+1_2dup_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_2 2_lit_3 3_2!_0 0_over_1 1_lit_+_1 1_negate_1 1_call_1 
+1_noop_2 2_lit_3 3_2@_4 4_d+_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_2dup_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_2dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_2dup_1 1_noop_0 0_lit_1 1_2@_1 1_d<_1 1_noop_2 2_?branch_1 1_noop_2 2_rot_3 3_drop_2 2_noop_1 1_branch_1 
+1_2drop_1 
+1_tuck_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_2dup_1 1_lit-perform_1 
+1_2dup_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_>r_0 0_lit_1 1_2@_1 1_call_1 
+1_2dup_1 1_swap_2 2_noop_0 0_lit@_1 1_call_1 
+1_drop_1 1_call_1 
+1_noop_2 2_2dup_4 4_lit_5 5_2!_2 2_lit_3 3_2!_0 0_r>_1 1_call_1 
+1_;s_1 
+1_dup_2 2_>r_1 
+1_1-_1 1_dup_1 1_0>=_1 1_noop_2 2_?branch_1 1_2dup_3 3_+_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 
+1_noop_2 2_1+_2 2_tuck_2 2_+_1 1_r>_2 2_rot_3 3_-_2 2_noop_1 1_;s_1 
+1_dup_2 2_0=_2 2_?branch_1 1_;s_1 
+1_0<_1 1_2*_1 1_1+_1 1_;s_1 
+1_swap_1 1_call_1 
+1_(?do)_1 
+1_dup_2 2_c@_2 2_i_3 3_c@_3 3_<>_2 2_?branch_1 1_dup_1 1_c@_1 1_toupper_1 1_noop_0 0_i_1 1_c@_1 1_toupper_1 1_=_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_noop_2 2_?branch_1 1_1+_1 1_(loop)_1 
+1_unloop_1 1_drop_0 0_lit_1 1_branch_1 
+1_c@_1 1_toupper_1 1_noop_0 0_i_1 1_c@_1 1_toupper_1 1_-_1 1_unloop_1 
+1_call_1 
+1_;s_1 
+1_dup_2 2_0=_2 2_?branch_1 1_2drop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_2>r_1 1_call_1 
+1_dup_2 2_i_3 3_=_2 2_?branch_1 1_noop_0 0_rdrop_0 0_r>_1 1_call_1 
+1_0<=_1 1_;s_1 
+1_r>_2 2_<_1 1_nip_1 1_rdrop_1 1_;s_1 
+1_>r_1 
+1_dup_2 2_?branch_1 1_>r_0 0_dup_1 1_noop_0 0_i_1 1_call_1 
+1_nip_1 1_<=_1 1_noop_2 2_?branch_1 1_2dup_1 1_noop_0 0_i_1 1_call_1 
+1_drop_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_r>_2 2_dup_3 3_noop_0 0_i_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_lit_@_1 1_call_1 
+1_0>=_1 1_noop_2 2_?branch_1 1_rdrop_1 1_dup_2 2_>r_1 
+1_>r_1 
+1_noop_0 0_r>_1 1_@_1 1_branch_1 
+1_drop_0 0_r>_1 1_;s_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_;s_1 
+1_dup_1 1_lit_!_1 1_?dup_1 1_noop_2 2_?branch_1 1_call_1 
+1_noop_2 2_rot_3 3_/string_2 2_rot_3 3_drop_2 2_noop_1 1_dup_2 2_1+_2 2_lit_3 3_cell+_3 3_!_1 1_branch_1 
+1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit@_2 2_dup_3 3_@_3 3_1-_3 3_cells_3 3_over_4 4_+_3 3_(do)_1 
+1_i_2 2_2@_3 3_<>_2 2_?branch_1 1_noop_0 0_i_1 1_cell+_1 1_@_1 1_lit+_1 1_@_1 1_swap_1 1_call_1 
+1_lit_2 2_(+loop)_1 1_unloop_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_over_2 2_noop_0 0_lit_1 1_pick_1 1_+_1 1_lit_2 2_@_2 2_0<>_2 2_-_1 1_<_1 1_;s_1 
+1_dup_2 2_lit_3 3_<>_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_over_2 2_0<_2 2_over_3 3_0=_3 3_and_2 2_?branch_1 1_drop_1 1_abs_1 1_does-exec_1 
+1_;s_1 
+1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_?dup_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_0<_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_lit-perform_1 
+1_?dup_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_0<_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_lit-perform_1 
+1_r>_2 2_useraddr_3 3_!_1 1_;s_1 
+1_lit-perform_1 
+1_lit_!_;s_1 
+1_lit_@_1 1_/mod_1 1_negate_1 1_swap_1 1_negate_1 1_swap_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_call_1 
+1_2dup_1 1_lit-perform_1 
+1_2dup_1 1_lit-perform_1 
+1_;s_1 
+1_lit_@_1 1_call_1 
+1_>r_1 1_2dup_1 1_swap_1 1_lit-perform_1 
+1_2dup_1 1_swap_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_lit_2 2_@_2 2_>r_1 1_lit_!_1 1_lit_@_1 1_lit_2 2_@_2 2_/_1 1_lit_@_1 1_i_2 2_/_1 1_max_1 1_lit_2 2_@_2 2_r>_3 3_-_2 2_*_1 1_lit_2 2_max_1 1_dup_1 1_does-exec_1 
+1_lit_2 2_+!_0 0_noop_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_>r_0 0_2over_2 2_noop_0 0_i_1 1_lit-perform_1 
+1_+_1 1_u<_1 1_noop_2 2_?branch_1 1_rdrop_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_over_2 2_noop_0 0_i_1 1_lit-perform_1 
+1_+_1 1_swap_1 1_move_1 1_2dup_3 3_+_2 2_i_3 3_swap_2 2_noop_0 0_i_1 1_lit-perform_1 
+1_lit-perform_1 
+1_2drop_1 1_drop_0 0_r>_1 1_lit-perform_1 
+1_>r_1 1_noop_2 2_rot_3 3_i_4 4_+_3 3_-rot_2 2_noop_1 1_r>_2 2_+_1 1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_noop_2 2_0=_2 2_?branch_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_over_2 2_+_1 1_lit-perform_1 
+1_over_2 2_-_1 1_lit_2 2_max_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_noop_2 2_over_3 3_<>_2 2_?branch_1 1_over_2 2_+_1 1_lit-perform_1 
+1_lit-perform_1 
+1_over_2 2_-_1 1_branch_1 
+1_call_1 
+1_2dup_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_over_2 2_+_1 1_dup_1 1_lit-perform_1 
+1_noop_2 2_tuck_2 2_-_1 1_>r_1 1_over_2 2_-_1 1_call_1 
+1_noop_0 0_over_1 1_i_2 2_+_1 1_-rot_1 1_move_1 1_noop_2 2_rot_3 3_r>_4 4_-_3 3_-rot_2 2_noop_1 1_;s_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_does-exec_1 
+1_lit_2 2_lit_3 3_+!_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_noop_2 2_over_3 3_<>_2 2_?branch_1 1_call_1 
+1_drop_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_does-exec_1 
+1_lit_2 2_lit_3 3_+!_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_noop_2 2_over_3 3_or_2 2_0=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_;s_1 
+1_drop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_drop_0 0_over_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_2 2_rot_3 3_>r_2 2_tuck_2 2_2dup_2 2_r>_3 3_swap_3 3_/string_2 2_noop_1 1_call_1 
+1_dup_1 1_does-exec_1 
+1_lit_2 2_+!_0 0_noop_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_>r_0 0_lit_1 1_2@_1 1_call_1 
+1_2dup_1 1_swap_2 2_noop_0 0_lit@_1 1_call_1 
+1_drop_1 1_call_1 
+1_noop_2 2_2dup_4 4_lit_5 5_2!_2 2_lit_3 3_2!_0 0_r>_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_lit_2 2_cell+_2 2_@_2 2_?dup_1 1_noop_2 2_?branch_1 1_>r_1 1_i_2 2_-_1 1_call_1 
+1_noop_0 0_over_1 1_i_2 2_+_1 1_-rot_1 1_move_1 1_noop_2 2_rot_3 3_i_4 4_-_3 3_-rot_2 2_noop_1 1_call_1 
+1_noop_0 0_i_1 1_does-exec_1 
+1_noop_0 0_r>_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_noop_2 2_rot_3 3_over_4 4_min_3 3_>r_2 2_noop_1 1_i_2 2_-_1 1_over_2 2_dup_3 3_i_4 4_+_3 3_rot_1 1_move_1 1_noop_0 0_r>_1 1_move_1 1_;s_1 
+1_lit-perform_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_2dup_1 1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_nip_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_2drop_1 1_call_1 
+1_branch_1 
+1_dup_2 2_>r_1 1_2>r_1 1_call_1 
+1_noop_2 2_i_3 3_+_2 2_2r>_4 4_2swap_2 2_noop_1 1_call_1 
+1_noop_2 2_i_3 3_+_2 2_rot_3 3_r>_4 4_+_3 3_-rot_2 2_noop_1 
+1_lit_2 2_@_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit@_2 2_?branch_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit@_2 2_?branch_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_?dup-?branch_1 
+1_drop_0 0_2drop_0 0_lit_1 1_lit_!_1 1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_!_0 0_lit@_1 1_file-size_1 1_lit-perform_1 
+1_noop_2 2_2dup_4 4_lit_5 5_2!_2 2_2dup_4 4_lit_5 5_2!_2 2_lit_3 3_2!_0 0_lit_1 1_lit_2 2_noop_0 0_lit_1 
+1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_+_1 1_c!_1 1_;s_1 
+1_lit_+_1 1_c!_1 1_;s_1 
+1_lit-perform_1 
+1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_useraddr_@_1 1_>r_0 0_lit_1 1_useraddr_!_1 
+1_lit-perform_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_nip_1 1_swap_2 2_lit_3 3_*_2 2_+_1 1_branch_1 
+1_r>_2 2_useraddr_3 3_!_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_branch_1 
+1_nip_1 1_noop_0 0_lit_1 
+1_+_1 1_c@_1 1_dup_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_2@_2 2_rot_3 3_min_2 2_2*_2 2_cells_2 2_+_1 1_2@_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_2 2_lit_3 3_(?do)_1 
+1_i_2 2_over_3 3_>r_2 2_2*_2 2_cells_2 2_+_1 1_2@_2 2_2over_4 4_noop_1 1_call_1 
+1_noop_2 2_?branch_1 1_rdrop_1 1_2drop_0 0_i_1 1_unloop_1 1_;s_1 
+1_noop_0 0_r>_1 1_(loop)_1 
+1_unloop_1 1_drop_0 0_2drop_0 0_lit_1 1_;s_1 
+1_lit_2 2_min_1 1_swap_2 2_lit_3 3_lshift_2 2_+_1 1_;s_1 
+1_dup_1 1_noop_0 0_lit_1 1_rshift_1 1_swap_1 1_lit_2 2_and_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_does-exec_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_swap_1 1_call_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_useraddr_@_1 1_call_1 
+1_swap_1 1_call_1 
+1_swap_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_!_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_stderr_1 1_lit_!_1 1_call_1 
+1_;s_1 
+1_noop_2 2_lit_3 3_@_3 3_>_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_noop_2 2_rot_3 3_?branch_1 1_2drop_1 1_branch_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_useraddr_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_does-exec_1 
+1_lit@_2 2_*_1 1_call_1 
+1_dup_1 1_lit_!_1 1_does-exec_1 
+1_nip_1 1_lit@_2 2_*_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_2dup_1 1_call_1 
+1_lit-perform_1 
+1_rot_1 1_close-file_1 1_lit-perform_1 
+1_2dup_1 1_file-status_1 1_lit-perform_1 
+1_call_1 
+1_open-file_1 1_lit-perform_1 
+1_>r_0 0_2drop_0 0_r>_1 1_call_1 
+1_branch_1 
+1_rdrop_1 1_call_1 
+1_>r_1 1_2dup_1 1_file-status_1 1_nip_1 1_0=_1 1_r>_2 2_and_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_create-file_1 1_lit-perform_1 
+1_useraddr_2 2_@_2 2_?branch_1 1_lit-perform_1 
+1_useraddr_@_1 1_close-file_1 1_lit-perform_1 
+1_useraddr_!_1 1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_useraddr_2 2_@_2 2_0=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_;s_1 
+1_dup_1 1_lit@_2 2_u>=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_useraddr_2 2_@_2 2_-_1 1_noop_0 0_lit_1 1_um*_1 1_call_1 
+1_reposition-file_1 1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?dup_1 1_noop_2 2_?branch_1 1_lit+_1 1_call_1 
+1_;s_1 
+1_>r_1 1_i_2 2_lit+_2 2_@_2 2_?branch_1 1_noop_0 0_i_1 1_@_1 1_call_1 
+1_i_2 2_lit+_2 2_lit_3 3_noop_0 0_i_1 1_lit+_1 1_@_1 1_write-file_1 1_lit-perform_1 
+1_noop_0 0_i_1 1_lit+_1 1_@_1 1_flush-file_1 1_lit-perform_1 
+1_noop_0 0_i_1 1_lit+_1 1_call_1 
+1_rdrop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_lit+_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_lit@_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_call_1 
+1_lit+_1 1_(loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_lit_@_1 1_lit@_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_call_1 
+1_lit+_1 1_(loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit@_1 1_um/mod_1 1_drop_1 1_does-exec_1 
+1_nip_1 1_*_1 1_lit_@_+_1 1_;s_1 
+1_dup_1 1_useraddr_2 2_@_2 2_u<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_dup_1 1_call_1 
+1_>r_1 1_dup_2 2_i_3 3_@_3 3_<>_2 2_i_3 3_lit+_3 3_@_3 3_useraddr_4 4_@_4 4_<>_3 3_or_2 2_?branch_1 1_noop_0 0_i_1 1_call_1 
+1_dup_1 1_call_1 
+1_i_2 2_lit+_2 2_noop_0 0_lit_1 1_call_1 
+1_read-file_1 1_lit-perform_1 
+1_i_2 2_lit+_2 2_over_3 3_+_2 2_lit_3 3_rot_1 1_-_1 1_call_1 
+1_i_2 2_!_0 0_noop_1 1_call_1 
+1_i_2 2_lit+_2 2_!_0 0_noop_1 1_branch_1 
+1_drop_1 
+1_noop_0 0_r>_1 1_dup_1 1_lit_!_1 1_lit+_1 1_;s_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_+_@_1 1_;s_1 
+1_dup_1 1_useraddr_!_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_useraddr_@_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_lit_3 3_(?do)_1 
+1_i_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_useraddr_@_1 1_call_1 
+1_i_2 2_lit_3 3_*_2 2_+_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_lit_2 2_<>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_!_;s_1 
+1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_@_1 1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_does-exec_1 
+1_noop_2 2_+!_0 0_lit_1 1_does-exec_1 
+1_+!_1 1_does-exec_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_does-exec_1 
+1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_dup_1 1_does-exec_1 
+1_!_1 1_does-exec_1 
+1_!_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_does-exec_1 
+1_noop_3 3_2!_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_1+_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_i_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_does-exec_1 
+1_@_1 1_+_1 1_call_1 
+1_;s_1 
+1_1+_1 1_swap_2 2_(?do)_1 
+1_noop_0 0_i_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_does-exec_1 
+1_drop_1 1_;s_1 
+1_useraddr_@_1 1_>r_0 0_useraddr_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_close-file_1 1_lit-perform_1 
+1_call_1 
+1_r>_2 2_useraddr_3 3_!_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_drop_1 1_call_1 
+1_;s_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_lit+_2 2_!_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_lit+_2 2_!_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_+_1 1_>r_1 1_call_1 
+1_call_1 
+1_call_1 
+1_lit+_1 1_@_1 1_i_2 2_lit+_2 2_=_1 1_and_1 1_call_1 
+1_lit+_1 1_@_1 1_r>_2 2_=_1 1_and_1 1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_cell+_1 1_call_1 
+1_swap_1 1_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit+_1 1_swap_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_lit+_1 1_swap_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_>l_1 1_>l_1 1_call_1 
+1_>l_1 1_lp-_1 1_@local3_1 1_call_1 
+1_@local2_2 2_noop_0 0_@local1_1 1_@local3_1 1_move_1 1_noop_0 0_@local1_1 1_@local3_1 1_lp+2_1 1_;s_1 
+1_2over_3 3_2over_5 5_noop_1 1_call_1 
+1_noop_2 2_?branch_1 1_nip_1 1_/string_1 1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_lit_2 2_2@_3 3_>l_2 2_>l_1 1_lit_2 2_2@_3 3_>l_2 2_>l_1 1_call_1 
+1_call_1 
+1_>l_0 0_lp-_0 0_@local#_1 1_2*_1 1_cells_1 1_call_1 
+1_@local1_2 2_@local#_3 3_lit_4 4_2!_1 1_@local2_2 2_noop_0 0_@local1_1 1_@local3_1 1_2*_1 1_cells_1 1_move_1 1_noop_0 0_@local#_1 1_@local3_1 1_(u+do)_1 
+1_noop_0 0_@local#_1 1_i_2 2_2*_2 2_cells_2 2_+_1 1_2@_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_getenv_1 1_call_1 
+1_call_1 
+1_noop_2 2_@local1_3 3_i_4 4_2*_4 4_cells_4 4_+_3 3_2!_0 0_noop_1 1_(loop)_1 
+1_unloop_1 1_call_1 
+1_lp+!#_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_create-file_1 1_lit-perform_1 
+1_>r_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_-_1 1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_!_1 1_call_1 
+1_lit_2 2_-_1 1_dup_1 1_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_over_2 2_-_1 1_noop_0 0_i_1 1_write-file_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_close-file_1 1_lit-perform_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_>r_0 0_2dup_2 2_noop_0 0_r>_1 1_call_1 
+1_@_1 1_(tablelfind)_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_lit_2 2_lit_3 3_within_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_dup_1 1_call_1 
+1_dup_1 1_call_1 
+1_noop_2 2_lit_3 3_rot_1 1_lit_2 2_-_1 1_call_1 
+1_!_1 1_1+_1 1_;s_1 
+1_dup_1 1_lit_2 2_lit_3 3_within_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_swap_1 1_lit_2 2_-_1 1_call_1 
+1_@_1 1_call_1 
+1_;s_1 
+1_dup_1 1_lit_2 2_and_1 1_call_1 
+1_lit-perform_1 
+1_dup_2 2_lit_3 3_and_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_2 2_lit_3 3_and_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_2 2_lit_3 3_and_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_2 2_tuck_2 2_2@_3 3_+_2 2_c!_0 0_dup_1 1_2@_2 2_1+_2 2_rot_3 3_2!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_dup_2 2_?branch_1 1_1-_1 1_2dup_3 3_lit_4 4_2!_1 1_+_1 1_c@_1 1_branch_1 
+1_2drop_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_swap_3 3_1-_3 3_(-do)_1 
+1_dup_1 1_i_2 2_+_1 1_c@_1 1_call_1 
+1_noop_0 0_lit_1 1_(-loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_2 2_nip_1 1_0<>_1 1_call_1 
+1_or_1 1_;s_1 
+1_lit-perform_1 
+1_noop_2 2_?branch_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_2@_3 3_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_2 2_execute_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_2dup_1 1_1-_1 1_dup_2 2_?branch_1 1_2dup_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_?branch_1 1_drop_1 1_2drop_1 1_branch_1 
+1_noop_0 0_lit_1 1_-rot_1 1_call_1 
+1_branch_1 
+1_2drop_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_lit_3 3_(+do)_1 
+1_lit-perform_1 
+1_noop_2 2_0=_2 2_0=_2 2_?branch_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@_2 2_=_1 1_;s_1 
+1_dup_2 2_lit@_3 3_u>=_2 2_?branch_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_nip_1 1_branch_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_lit-perform_1 
+1_dup_2 2_?branch_1 1_drop_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_lit@_2 2_u<_1 1_;s_1 
+1_dup_1 1_lit_2 2_u<_1 1_;s_1 
+1_call_1 
+1_0=_1 1_;s_1 
+1_;s_1 
+1_>r_1 1_lit_2 2_lit_3 3_rot_1 1_does-exec_1 
+1_+_1 1_over_2 2_-_1 1_noop_0 0_r>_1 1_call_1 
+1_call_1 
+1_drop_1 1_noop_2 2_rot_3 3_rot_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_swap_1 1_call_1 
+1_;s_1 
+1_dup_1 1_c@_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_char+_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_lit_4 4_within_2 2_?branch_1 1_drop_0 0_lit_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_newline_1 1_1-_1 1_2dup_1 1_call_1 
+1_swap_1 1_dup_1 1_call_1 
+1_move_1 1_+_1 1_c@_1 1_branch_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_dup_2 2_lit_3 3_lit_4 4_within_2 2_?branch_1 1_lit_2 2_-_1 1_lit_+_1 1_c@_1 
+1_noop_2 2_lit_3 3_under+_2 2_noop_1 1_;s_1 
+1_call_1 
+1_>r_1 1_does-exec_1 
+1_@_1 1_does-exec_1 
+1_over_2 2_+_1 1_>r_1 1_+_1 
+1_dup_2 2_i_3 3_<_2 2_?branch_1 1_dup_2 2_c@_2 2_lit_3 3_<>_2 2_?branch_1 1_dup_1 1_c@_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_char+_1 1_dup_2 2_i_3 3_=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_char+_1 
+1_branch_1 
+1_char+_1 1_does-exec_1 
+1_>r_1 1_-_1 1_r>_2 2_min_1 1_does-exec_1 
+1_!_1 1_r>_2 2_drop_1 1_call_1 
+1_r>_2 2_-_1 1_dup_1 1_negate_1 1_call_1 
+1_call_1 
+1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_2dup_1 1_call_1 
+1_drop_1 1_free_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_does-exec_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_lit+_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_r>_1 1_call_1 
+1_!_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_!_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_finish-code_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_over_2 2_-_1 1_flush-icache_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_lit_@_and_1 1_noop_2 2_?branch_1 1_dup_1 1_does-exec_1 
+1_lit_2 2_+!_0 0_noop_1 1_branch_1 
+1_drop_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_lit_@_1 1_lit_2 2_@_2 2_-_1 1_dup_2 2_0>_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_+!_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_lit_2 2_@_2 2_lit_3 3_@_3 3_=_2 2_?branch_1 1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_lit_2 2_@_2 2_?branch_1 1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_lit_2 2_@_2 2_-_1 1_does-exec_1 
+1_branch_1 
+1_call_1 
+1_lit_2 2_lit_3 3_+!_1 1_lit_2 2_lit_3 3_!_1 1_lit_@_1 1_does-exec_1 
+1_lit_@_1 1_lit_!_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_@_1 1_over_2 2_+_1 1_call_1 
+1_u>=_1 1_noop_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_2 2_lit_3 3_+!_1 1_lit_2 2_@_2 2_?branch_1 1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_(?do)_1 
+1_noop_0 0_i_1 1_c@_1 1_toupper_1 1_lit-perform_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit-perform_1 
+1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_over_2 2_lit_3 3_=_2 2_lit_3 3_@_3 3_lit_4 4_@_4 4_=_3 3_and_2 2_?branch_1 1_2drop_1 1_branch_1 
+1_lit_2 2_+!_0 0_noop_1 1_lit_2 2_@_2 2_?branch_1 1_lit-perform_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_rot_1 1_call_1 
+1_noop_2 2_?branch_1 1_-rot_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_swap_2 2_(u+do)_1 
+1_noop_0 0_i_1 1_call_1 
+1_noop_2 2_lit_3 3_and_2 2_?branch_1 1_noop_0 0_i_1 1_unloop_1 1_;s_1 
+1_lit_2 2_(+loop)_1 
+1_unloop_1 1_call_1 
+1_;s_1 
+1_1+_1 1_>r_0 0_lit_1 1_call_1 
+1_@_1 1_dup_2 2_?branch_1 1_tuck_1 1_call_1 
+1_@_1 1_i_2 2_-_1 1_call_1 
+1_swap_1 1_branch_1 
+1_drop_1 1_dup_2 2_i_3 3_negate_3 3_u>=_2 2_?branch_1 1_drop_0 0_lit_1 
+1_r>_2 2_+_1 1_;s_1 
+1_drop_1 1_call_1 
+1_;s_1 
+1_dup_2 2_?branch_1 1_2dup_1 1_newline_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_newline_1 1_nip_1 1_/string_1 1_branch_1 
+1_noop_0 0_over_1 1_c@_1 1_dup_2 2_lit_3 3_=_2 2_over_3 3_lit_4 4_=_3 3_or_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_dup_2 2_lit_3 3_lit_4 4_within_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_useraddr_2 2_@_2 2_>r_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_noop_0 0_lit_1 1_useraddr_2 2_!_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 
+1_i_2 2_useraddr_3 3_!_1 1_call_1 
+1_rdrop_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_/string_1 
+1_branch_1 
+1_2drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_cell+_1 1_lit_!_;s_1 
+1_lit_@_1 
+1_dup_2 2_lit_3 3_@_3 3_u<_2 2_?branch_1 1_dup_@_1 1_noop_0 0_lit_1 1_pick_1 1_<>_1 1_noop_2 2_?branch_1 1_lit_2 2_cells_2 2_+_1 1_branch_1 
+1_nip_1 1_dup_1 1_lit_2 2_cells_2 2_+_1 1_lit_2 2_!_0 0_lit_1 1_branch_1 
+1_2drop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_cell+_1 
+1_dup_2 2_lit_3 3_@_3 3_u<_2 2_?branch_1 1_dup_@_1 1_noop_0 0_lit_1 1_pick_1 1_u<=_1 1_noop_2 2_?branch_1 1_lit_2 2_cells_2 2_+_1 1_branch_1 
+1_2drop_0 0_lit_1 1_branch_1 
+1_2drop_0 0_lit_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_2 2_lit_3 3_cells_3 3_-_2 2_@_2 2_over_3 3_<>_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_branch_1 
+1_lit_@_1 1_lit_2 2_cells_2 2_-_1 1_branch_1 
+1_lit_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 
+1_dup_2 2_lit_3 3_@_3 3_u<_2 2_?branch_1 1_dup_@_1 1_noop_0 0_lit_1 1_pick_1 1_u>_1 1_over_2 2_@_2 2_noop_0 0_lit_1 1_pick_1 1_u<_1 1_and_1 1_noop_2 2_?branch_1 1_dup_1 1_cell+_1 1_@_1 1_noop_0 0_lit_1 1_pick_1 1_u<_1 1_noop_2 2_?branch_1 1_2drop_1 1_drop_0 0_lit_1 1_;s_1 
+1_lit_2 2_cells_2 2_+_1 1_branch_1 
+1_2drop_1 1_drop_0 0_lit_1 1_;s_1 
+1_lit_@_1 1_dup_2 2_lit_3 3_u>_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_!_1 1_lit_2 2_cells_2 2_lit_3 3_+!_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_cells_2 2_-_1 1_!_;s_1 
+1_noop_0 0_over_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_0=_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_=_1 1_;s_1 
+1_lit_@_1 1_lit_2 2_=_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_lit-perform_1 
+1_branch_1 
+1_2drop_1 1_drop_1 
+1_;s_1 
+1_over_2 2_u<_1 1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_drop_0 0_dup_1 1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_drop_0 0_over_1 1_lit_2 2_cells_2 2_-_1 1_@_1 1_dup_1 1_lit+_1 1_call_1 
+1_noop_2 2_?branch_1 1_nip_1 1_nip_1 1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_nip_1 1_dup_2 2_cell+_2 2_@_2 2_lit_3 3_and_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_1 1_call_1 
+1_rot_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_lit+_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_dup_@_1 1_dup_1 1_lit+_1 1_dup_1 1_call_1 
+1_over_2 2_=_1 1_swap_1 1_call_1 
+1_and_1 1_noop_2 2_?branch_1 1_dup_1 1_lit+_1 1_@_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_drop_1 1_call_1 
+1_;s_1 
+1_over_2 2_lit_3 3_cells_3 3_+_2 2_over_3 3_=_2 2_?branch_1 1_noop_0 0_over_1 1_lit_2 2_cells_2 2_+_1 1_@_1 1_decompile-prim_1 1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_>r_0 0_over_1 1_lit_2 2_cells_2 2_+_1 1_@_1 1_decompile-prim_1 1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_noop_2 2_r>_3 3_and_2 2_?branch_1 1_over_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_lit_3 3_lit+_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_;s_1 
+1_over_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_lit_3 3_lit+_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_cells_2 2_+_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_dup_1 1_call_1 
+1_over_2 2_-_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_drop_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_cell+_1 1_;s_1 
+1_dup_1 1_lit_2 2_cells_2 2_-_1 1_@_1 1_call_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 
+1_over_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_/string_1 
+1_2dup_3 3_+_2 2_1-_2 2_c@_2 2_lit_3 3_=_2 2_?branch_1 1_1-_1 
+1_call_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_count_2 2_2dup_4 4_+_3 3_aligned_3 3_-rot_2 2_noop_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_;s_1 
+1_dup_@_1 1_>r_0 0_i_1 1_@_1 1_decompile-prim_1 1_noop_0 0_lit_1 1_call_1 
+1_<>_1 1_noop_2 2_?branch_1 1_noop_0 0_rdrop_0 0_lit_1 1_;s_1 
+1_i_2 2_cell+_2 2_@_2 2_over_3 3_cell+_3 3_<>_2 2_?branch_1 1_noop_0 0_rdrop_0 0_lit_1 1_;s_1 
+1_noop_0 0_i_1 1_lit_2 2_cells_2 2_+_1 1_@_1 1_decompile-prim_1 1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_drop_1 1_i_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_over_3 3_cell+_3 3_+_2 2_aligned_2 2_i_3 3_=_2 2_?branch_1 1_noop_0 0_i_1 1_lit_2 2_cells_2 2_+_1 1_@_1 1_decompile-prim_1 1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_noop_2 2_i_3 3_lit_4 4_cells_4 4_+_3 3_@_3 3_lit_4 4_lit+_4 4_=_3 3_and_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_i_2 2_cell+_2 2_@_2 2_noop_0 0_i_1 1_lit_2 2_cells_2 2_+_1 1_@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_2drop_1 
+1_nip_1 1_cells_1 1_r>_2 2_+_1 1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_i_1 1_cell+_1 1_@_1 1_f@_1 1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_drop_0 0_r>_1 1_lit_2 2_cells_2 2_+_1 1_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_i_2 2_cell+_2 2_@_2 2_count_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_drop_0 0_r>_1 1_lit_2 2_cells_2 2_+_1 1_noop_0 0_lit_1 1_;s_1 
+1_noop_2 2_?branch_1 1_dup_2 2_dup_3 3_@_3 3_swap_3 3_lit_4 4_cells_4 4_-_3 3_@_3 3_u>_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_drop_0 0_lit_1 
+1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_noop_2 2_?branch_1 
+1_2dup_3 3_lit_4 4_cells_4 4_-_3 3_@_3 3_swap_3 3_@_3 3_u<=_2 2_?branch_1 1_drop_0 0_dup_1 1_cell+_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_noop_0 0_lit_1 
+1_branch_1 
+1_noop_0 0_lit_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_cell+_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_lit_2 2_swap_3 3_!_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_dup_1 1_cell+_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_dup_1 1_cell+_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_cell+_2 2_@_2 2_lit_3 3_=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_dup_1 1_cell+_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_2 2_cell+_2 2_@_2 2_lit_3 3_=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_cell+_1 1_lit_2 2_swap_3 3_!_1 1_branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_@_1 1_branch_1 
+1_cell+_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_swap_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_@_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_dup_1 1_dup_@_1 1_over_2 2_+_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_cell+_1 1_dup_2 2_@_2 2_0=_2 2_?branch_1 1_lit_2 2_swap_3 3_!_1 1_branch_1 
+1_drop_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_cell+_2 2_@_2 2_lit_3 3_=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_cell+_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_cell+_1 1_noop_0 0_lit_1 1_swap_2 2_!_0 0_dup_1 1_call_1 
+1_branch_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_cell+_1 1_;s_1 
+1_dup_1 1_lit_2 2_cells_2 2_-_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_drop_1 
+1_;s_1 
+1_count_2 2_2dup_4 4_+_3 3_aligned_3 3_-rot_2 2_noop_1 1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_2drop_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_decompile-prim_1 1_noop_0 0_lit_1 
+1_dup_@_1 1_dup_2 2_0=_2 2_?branch_1 1_drop_1 1_cell+_1 1_@_1 1_dup_2 2_?branch_1 1_dup_@_1 1_branch_1 
+1_2drop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_pick_1 1_<>_1 1_noop_2 2_?branch_1 1_lit_2 2_cells_2 2_+_1 1_branch_1 
+1_nip_1 1_cell+_1 1_perform_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 
+1_cell+_1 1_@_1 1_dup_2 2_lit_3 3_u>_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_dup_2 2_lit_3 3_<>_2 2_over_3 3_lit_4 4_<>_3 3_and_2 2_?branch_1 1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_drop_1 
+1_dup_1 1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_call_1 
+1_dup_1 1_cell+_1 1_swap_1 1_@_1 1_dup_2 2_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_swap_2 2_?branch_1 1_drop_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit_2 2_@_2 2_?branch_1 1_drop_1 1_;s_1 
+1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_@_1 1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_call_1 
+1_branch_1 
+1_dup_1 1_call_1 
+1_over_2 2_-_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit+_1 1_dup_1 1_dup_1 1_call_1 
+1_swap_2 2_-_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_lit+_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_lit+_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_lit+_1 1_@_1 1_lit-perform_1 
+1_call_1 
+1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_?dup-?branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_@_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_lit_!_;s_1 
+1_lit_2 2_lit_3 3_!_1 1_dup_1 1_call_1 
+1_lit_2 2_lit_3 3_!_1 1_call_1 
+1_;s_1 
+1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_lit_@_1 1_lit_!_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit_2 2_lit_3 3_!_1 1_lit+_1 1_call_1 
+1_;s_1 
+1_dup_1 1_lit+_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_noop_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_over_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_over_2 2_lit+_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_2drop_1 1_noop_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_drop_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_>r_0 0_dup_1 1_call_1 
+1_over_2 2_i_3 3_=_2 2_?branch_1 1_swap_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_i_2 2_lit_3 3_=_2 2_?branch_1 1_swap_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_0 0_i_1 1_lit-perform_1 
+1_call_1 
+1_swap_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_over_1 1_call_1 
+1_drop_1 
+1_rdrop_1 1_drop_1 1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_drop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_@_1 1_dup_1 1_lit_2 2_cells_2 2_/_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_f@_1 1_call_1 
+1_represent_1 1_noop_2 2_0=_2 2_?branch_1 1_2drop_1 1_call_1 
+1_lit_2 2_min_1 1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_1-_1 1_call_1 
+1_noop_0 0_over_1 1_c@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_lit_3 3_/string_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_float+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_@_1 1_dup_1 1_noop_0 0_lit_1 1_floats_1 1_/_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_@_1 1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_lit-perform_1 
+1_dup_@_1 1_dup_1 1_abs_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_rot_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_call_1 
+1_cell+_1 1_;s_1 
+1_does-exec_1 
+1_nip_1 1_call_1 
+1_;s_1 
+1_noop_2 2_dup_3 3_>r_2 2_lit+_2 2_@_2 2_over_3 3_<_2 2_?branch_1 1_i_2 2_lit+_2 2_@_2 2_over_1 1_resize_1 1_lit-perform_1 
+1_i_2 2_lit+_2 2_!_0 0_noop_1 1_dup_2 2_i_3 3_lit+_3 3_!_1 
+1_r>_2 2_!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_rp@_1 1_call_1 
+1_noop_2 2_?branch_1 1_rp@_1 1_lit_+_1 1_branch_1 
+1_useraddr_@_1 1_lit_2 2_-_1 
+1_useraddr_@_1 1_lit_2 2_-_1 1_over_2 2_-_1 1_lit_2 2_max_1 1_;s_1 
+1_call_1 
+1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_lit+_1 1_@_1 1_swap_1 1_move_1 1_;s_1 
+1_lit_2 2_-_1 1_dup_1 1_call_1 
+1_noop_2 2_over_3 3_dup_4 4_aligned_4 4_=_3 3_and_2 2_?branch_1 1_@_1 1_dup_1 1_call_1 
+1_dup_2 2_?branch_1 1_call_1 
+1_drop_1 1_branch_1 
+1_drop_0 0_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_drop_1 1_branch_1 
+1_drop_1 1_lit+_1 1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_swap_2 2_(u+do)_1 
+1_call_1 
+1_noop_0 0_i_1 1_@_1 1_dup_1 1_call_1 
+1_call_1 
+1_lit_2 2_(+loop)_1 
+1_unloop_1 1_;s_1 
+1_lit_2 2_2@_3 3_over_2 2_+_1 1_call_1 
+1_;s_1 
+1_noop_0 0_i_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_>l_0 0_lp-_0 0_lit_1 1_call_1 
+1_noop_0 0_@local1_1 1_call_1 
+1_@local1_2 2_cell+_2 2_noop_0 0_@local1_1 1_@_1 1_call_1 
+1_drop_1 1_lp+_1 1_;s_1 
+1_swap_2 2_(u+do)_1 
+1_call_1 
+1_noop_0 0_i_1 1_call_1 
+1_lit_2 2_(+loop)_1 
+1_unloop_1 1_;s_1 
+1_call_1 
+1_lit+_1 1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_>l_1 1_>l_0 0_@local0_1 
+1_>l_0 0_lp-_0 0_@local1_1 1_@local3_1 1_u<_1 1_noop_2 2_?branch_1 1_noop_0 0_@local1_1 1_@_1 1_dup_1 1_decompile-prim_1 1_=_1 1_noop_2 2_?branch_1 1_noop_0 0_@local1_1 1_call_1 
+1_call_1 
+1_noop_0 0_@local1_1 1_cell+_1 1_lp+_1 1_branch_1 
+1_noop_0 0_@local1_1 1_lp+2_1 1_;s_1 
+1_>l_1 1_>l_1 1_call_1 
+1_noop_0 0_@local0_1 
+1_>l_0 0_lp-_0 0_@local1_1 1_call_1 
+1_noop_0 0_@local1_1 1_cell+_1 1_@local3_1 1_call_1 
+1_>l_1 1_lp-_1 1_@local1_2 2_@local#_3 3_u<_2 2_?branch_1 1_@local3_1 1_@_1 1_noop_0 0_@local1_1 1_@_1 1_over_2 2_-_1 1_lit-perform_1 
+1_noop_0 0_@local1_1 1_lp+2_1 1_branch_1 
+1_lp+!#_1 1_;s_1 
+1_call_1 
+1_lit+_1 1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_lit_@_1 1_noop_0 0_lit_1 1_;s_1 
+1_drop_1 1_lit_!_1 1_lit_!_;s_1 
+1_>r_1 1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_!_1 1_dup_1 1_call_1 
+1_lit_2 2_lit_3 3_!_1 1_lit_2 2_lit_3 3_!_1 1_lit_2 2_lit_3 3_!_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_lit_2 2_min_1 1_dup_2 2_lit_3 3_(?do)_1 
+1_dup_1 1_i_2 2_-_1 1_pick_1 1_call_1 
+1_(loop)_1 
+1_unloop_1 1_drop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_!_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_useraddr_@_1 1_call_1 
+1_lit_@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit_@_1 1_@_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_useraddr_!_1 1_call_1 
+1_call_1 
+1_lit_2 2_lit_3 3_!_1 1_lit_@_1 1_lit_2 2_lit_3 3_!_1 1_call_1 
+1_drop_0 0_lit_1 1_lit_2 2_@_2 2_-_1 1_lit_2 2_max_1 1_does-exec_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_!_1 1_lit_@_1 1_call_1 
+1_;s_1 
+1_r>_2 2_drop_1 1_>r_1 1_;s_1 
+1_r>_2 2_lit_3 3_-_2 2_lit_3 3_!_1 1_lit_@_1 1_call_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_?dup_1 1_noop_2 2_?branch_1 1_dup_1 1_lit_!_1 1_dup_@_1 1_lit_!_1 1_lit_2 2_swap_3 3_!_1 1_?dup_1 1_noop_2 2_?branch_1 1_dup_2 2_lit_3 3_cell+_3 3_!_1 1_dup_@_1 1_lit_2 2_cell+_2 2_!_0 0_lit_1 1_swap_2 2_!_0 0_noop_1 1_drop_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?dup_1 1_noop_2 2_?branch_1 1_lit_@_1 1_swap_2 2_!_0 0_noop_1 
+1_lit_2 2_cell+_2 2_@_2 2_?dup_1 1_noop_2 2_?branch_1 1_lit_2 2_cell+_2 2_@_2 2_swap_3 3_!_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_@_1 1_cell+_1 1_@_1 1_lit+_1 1_;s_1 
+1_dup_1 1_call_1 
+1_noop_2 2_?branch_1 1_dup_1 1_lit+_1 1_swap_1 1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_;s_1 
+1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_drop_1 1_@_;s_1 
+1_dup_@_1 1_call_1 
+1_=_1 1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit+_1 1_@_1 1_branch_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit_2 2_!_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_@_1 1_lit_2 2_=_1 1_dup_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_noop_0 0_lit_1 1_branch_1 
+1_lit-perform_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_@_1 1_@_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_r>_2 2_drop_1 1_lit_2 2_@_2 2_>r_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_branch_1 
+1_drop_0 0_lit_1 1_;s_1 
+1_drop_1 
+1_branch_1 
+1_;s_1 
+1_lit_2 2_lit_3 3_!_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_swap_1 1_call_1 
+1_lit_!_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_lit_2 2_@_2 2_0=_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit_@_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_@_2 2_0=_2 2_?branch_1 1_;s_1 
+1_noop_0 0_lit_1 1_lit_2 2_+!_0 0_r>_1 1_branch_1 
+1_call_1 
+1_>r_1 1_lit_2 2_lit_3 3_+!_1 
+1_dup_1 1_branch_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_r>_1 1_lit_2 2_lit+_2 2_>r_1 1_;s_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lit-perform_1 
+1_call_1 
+1_noop_0 0_r>_1 1_lit_2 2_lit+_2 2_>r_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_swap_2 2_>r_1 1_dup_2 2_>r_1 1_call_1 
+1_noop_2 2_rot_3 3_noop_0 0_r>_1 1_r>_2 2_rot_3 3_rot_1 1_move_1 1_;s_1 
+1_>l_1 1_>l_1 1_useraddr_2 2_@_2 2_>r_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_@local0_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_@local0_2 2_@local1_3 3_+_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_r>_2 2_useraddr_3 3_!_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2dup_1 1_(system)_1 1_noop_4 4_2swap_2 2_drop_1 1_free_1 1_lit-perform_1 
+1_lit-perform_1 
+1_noop_2 2_?branch_1 1_@local0_2 2_noop_0 0_@local1_1 1_call_1 
+1_lp+_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_@local1_1 1_noop_0 0_@local2_1 
+1_swap_2 2_>l_1 1_>l_0 0_laddr#_1 1_2@_2 2_lit_3 3_/string_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_2dup_2 2_?branch_1 1_@local3_1 1_noop_2 2_tuck_2 2_-_1 1_noop_0 0_@local#_1 1_=mkdir_1 1_drop_1 1_lp+_1 1_branch_1 
+1_drop_1 1_2drop_1 1_@local3_1 1_@local#_2 2_noop_0 0_@local#_1 1_=mkdir_1 1_lp+!#_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_1+_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_1 1_>l_0 0_@local1_1 1_@local3_1 1_u>=_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_@local2_2 2_noop_0 0_@local0_1 1_@local3_1 1_move_1 1_@local0_2 2_noop_0 0_@local1_1 1_@local3_1 1_/string_1 1_lp+2_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_@local2_1 1_lit_2 2_u>_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_@local3_1 1_@local1_2 2_c!_0 0_@local1_1 1_@local2_2 2_lit_3 3_/string_2 2_noop_1 1_lp+2_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_1 1_>l_0 0_@local1_1 1_@local3_1 1_+_1 1_allocate_1 1_lit-perform_1 
+1_>l_0 0_lp-_0 0_@local2_1 1_noop_0 0_@local1_1 1_@local3_1 1_move_1 1_@local#_2 2_noop_0 0_@local1_1 1_@local3_1 1_+_1 1_noop_0 0_@local#_1 1_move_1 1_noop_0 0_@local1_1 1_@local3_1 1_@local#_2 2_+_1 1_lp+!#_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_1 1_>l_0 0_@local0_1 1_noop_0 0_@local1_1 1_@local3_1 1_+_1 1_dup_2 2_>l_1 1_lp-_1 1_resize_1 1_lit-perform_1 
+1_>l_0 0_lp-_0 0_@local#_1 1_@local1_2 2_@local#_3 3_+_2 2_noop_0 0_@local#_1 1_move_1 1_noop_0 0_@local1_1 1_@local3_1 1_lp+!#_1 1_;s_1 
+1_>l_1 1_>l_1 1_@local1_2 2_@_2 2_@local0_3 3_!_1 1_@local0_2 2_@local1_3 3_!_1 1_lp+_1 1_;s_1 
+1_>l_1 1_>l_0 0_@local0_1 1_noop_0 0_@local1_1 1_@_1 1_call_1 
+1_@local0_2 2_@local1_3 3_!_1 1_lp+_1 1_;s_1 
+1_>l_1 1_lp-_1 
+1_>l_1 1_lp-_1 1_@local1_2 2_?branch_1 1_noop_0 0_@local1_1 1_@local3_1 1_noop_2 2_execute_1 
+1_noop_0 0_@local1_1 1_@_1 1_lp+_1 1_branch_1 
+1_lp+2_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_d0=_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_allocate_1 1_lit-perform_1 
+1_lit_2 2_lit_3 3_2!_0 0_noop_1 
+1_noop_0 0_lit_1 1_2@_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2swap_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_d0=_1 1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_allocate_1 1_lit-perform_1 
+1_lit_2 2_lit_3 3_2!_0 0_noop_1 
+1_noop_0 0_lit_1 1_2@_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2swap_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_noop_1 1_;s_1 
+1_dup_1 1_lit+_1 1_swap_1 1_lit+_1 1_@_1 1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_dup_2 2_?branch_1 1_call_1 
+1_lit-perform_1 
+1_branch_1 
+1_drop_1 1_2drop_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_noop_2 2_execute_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_dup_1 1_0<_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_dup_1 1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_dup_1 1_0>=_1 1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_drop_1 1_call_1 
+1_swap_2 2_-_1 1_over_2 2_char+_2 2_c!_0 0_noop_1 1_call_1 
+1_swap_2 2_c!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_call_1 
+1_dup_2 2_0<_2 2_?branch_1 1_drop_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_drop_2 2_+_1 1_c@_1 1_;s_1 
+1_1+_1 1_;s_1 
+1_1+_1 1_;s_1 
+1_lit_+_1 1_;s_1 
+1_swap_1 1_1+_1 1_swap_1 1_;s_1 
+1_1+_1 1_;s_1 
+1_;s_1 
+1_noop_2 2_lit_3 3_lit_4 4_2swap_2 2_over_3 3_+_2 2_swap_3 3_(u+do)_1 
+1_noop_0 0_i_1 1_c@_1 1_cells_1 1_lit_+_@_1 1_noop_2 2_execute_1 
+1_(loop)_1 
+1_unloop_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_1-_1 1_dup_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_swap_2 2_1-_2 2_tuck_2 2_noop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_cells_1 1_lit_+_@_1 1_noop_2 2_execute_1 
+1_;s_1 
+1_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_0 0_laddr#_1 1_2@_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_@local#_2 2_noop_0 0_@local#_1 1_laddr#_2 2_2@_3 3_over_4 4_+_3 3_swap_3 3_(u+do)_1 
+1_noop_0 0_i_1 1_c@_1 1_call_1 
+1_i_2 2_1+_2 2_i'_3 3_<_2 2_?branch_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_(loop)_1 
+1_unloop_1 1_2drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lp+!#_1 1_;s_1 
+1_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_laddr#_1 1_2@_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lp+!#_1 1_;s_1 
+1_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_1 1_swap_2 2_>l_1 1_>l_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_laddr#_1 1_2@_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lp+!#_1 1_;s_1 
+1_noop_0 0_lit_1 1_pick_1 1_lit_2 2_-_1 1_c@_1 1_cells_1 1_lit_+_@_1 1_noop_2 2_execute_1 
+1_;s_1 
+1_2dup_3 3_2>r_1 1_call_1 
+1_2r>_1 1_;s_1 
+1_2dup_1 1_call_1 
+1_2>r_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_2r>_1 1_;s_1 
+1_2dup_1 1_call_1 
+1_2>r_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_2r>_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_2>r_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_2r>_1 1_;s_1 
+1_call_1 
+1_;s_1 
+1_cells_1 1_lit_+_@_1 1_noop_2 2_execute_1 
+1_;s_1 
+1_count_2 2_>l_1 1_lp-_1 1_count_1 1_swap_2 2_>l_1 1_>l_0 0_laddr#_1 1_2@_2 2_+_1 1_count_2 2_swap_3 3_>l_2 2_>l_1 1_branch_1 
+1_lit_2 2_lit_3 3_swap_2 2_>l_1 1_>l_0 0_laddr#_1 1_2@_2 2_nip_1 1_laddr#_2 2_2@_3 3_nip_2 2_+_1 1_laddr#_2 2_2@_3 3_nip_2 2_+_1 1_lit_+_1 1_>l_0 0_lp-_0 0_@local1_1 1_allocate_1 1_lit-perform_1 
+1_>l_0 0_lp-_0 0_@local1_1 1_@local3_1 1_noop_0 0_laddr#_1 1_2@_1 1_call_1 
+1_noop_0 0_laddr#_1 1_2@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_laddr#_1 1_2@_1 1_call_1 
+1_(u+do)_1 
+1_noop_0 0_i_1 1_c@_1 1_call_1 
+1_call_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_call_1 
+1_noop_0 0_@local#_1 1_call_1 
+1_call_1 
+1_dup_1 1_0=_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2drop_0 0_@local1_1 1_@local3_1 1_lp+!#_1 1_;s_1 
+1_dup_2 2_>l_1 1_lp-_1 1_count_2 2_>l_1 1_lp-_1 1_count_2 2_2dup_4 4_swap_4 4_>l_3 3_>l_2 2_+_1 1_count_2 2_swap_3 3_>l_2 2_>l_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_lit_1 1_2@_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_@local#_1 1_call_1 
+1_2dup_1 1_lit-perform_1 
+1_drop_1 1_free_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_laddr#_1 1_2@_2 2_laddr#_3 3_2@_4 4_2over_2 2_noop_1 1_call_1 
+1_noop_0 0_@local#_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_?dup-?branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_?dup-?branch_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_lp+!#_1 1_;s_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_@local1_1 1_1-_1 1_noop_0 0_@local1_1 1_@local2_2 2_+_1 1_1-_1 1_(u-do)_1 
+1_noop_0 0_i_1 1_c@_1 1_@local3_1 1_=_1 1_noop_2 2_?branch_1 1_@local1_2 2_noop_0 0_i_1 1_over_2 2_-_1 1_1+_1 1_unloop_1 1_lp+2_1 1_;s_1 
+1_noop_0 0_lit_1 1_(-loop)_1 
+1_unloop_1 1_@local1_2 2_noop_0 0_lit_1 1_lp+2_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_2dup_1 1_call_1 
+1_nip_1 1_/string_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_branch_1 
+1_noop_2 2_lit_3 3_lit_4 4_2swap_2 2_noop_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_;s_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_;s_1 
+1_2over_1 1_call_1 
+1_noop_4 4_2swap_2 2_drop_1 1_free_1 1_lit-perform_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2dup_1 1_call_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_nip_1 1_/string_1 1_noop_0 0_lit@_1 1_call_1 
+1_noop_2 2_?branch_1 1_noop_0 0_lit_1 1_;s_1 
+1_rot_1 1_close-file_1 1_lit-perform_1 
+1_call_1 
+1_2dup_1 1_open-lib_1 1_>r_1 1_drop_1 1_free_1 1_lit-perform_1 
+1_noop_0 0_r>_1 1_;s_1 
+1_lit_@_1 1_0=_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_>l_1 1_>l_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_!_0 0_laddr#_1 1_2@_2 2_lit_3 3_2!_0 0_laddr#_1 1_2@_1 1_call_1 
+1_noop_2 2_lit_3 3_2!_0 0_lit_1 1_noop_0 0_lit_1 1_call_1 
+1_lp+_1 1_;s_1 
+1_noop_0 0_lit_1 1_2@_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2dup_1 1_noop_0 0_lit_1 1_create-file_1 1_lit-perform_1 
+1_lit_!_1 1_drop_1 1_free_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_dup_2 2_?branch_1 1_lit_2 2_@_2 2_!_0 0_noop_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_drop_1 1_call_1 
+1_lit_@_1 1_noop_0 0_lit_1 1_lit_@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_2dup_1 1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_lit_@_1 1_call_1 
+1_;s_1 
+1_lit_@_1 1_@_;s_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_lit_2 2_@_2 2_0=_2 2_?branch_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_@_1 1_dup_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_>l_1 1_lp-_1 1_branch_1 
+1_call_1 
+1_noop_0 0_lit_1 1_(try1)_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_2 2_execute_1 
+1_noop_0 0_lit_1 1_branch_1 
+1_rdrop_1 
+1_@local1_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit-perform_1 
+1_lp+_1 1_;s_1 
+1_call_1 
+1_noop_2 2_?branch_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_stderr_1 1_call_1 
+1_lib-error_1 1_noop_0 0_lit_1 1_stderr_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_noop_2 2_0=_2 2_?branch_1 1_call_1 
+1_close-file_1 1_lit-perform_1 
+1_lit_2 2_lit_3 3_!_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_2dup_1 1_call_1 
+1_drop_1 1_free_1 1_lit-perform_1 
+1_lit@_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_2@_1 1_call_1 
+1_2dup_1 1_call_1 
+1_drop_1 1_free_1 1_lit-perform_1 
+1_lit@_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_dup_2 2_0=_2 2_?branch_1 1_call_1 
+1_lit_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@_2 2_!_0 0_noop_1 
+1_noop_0 0_lit_1 1_2@_2 2_drop_1 1_free_1 1_lit-perform_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_;s_1 
+1_>l_0 0_lp-_0 0_@local1_1 1_lit+_1 1_call_1 
+1_swap_2 2_>l_1 1_>l_0 0_laddr#_1 1_2@_1 1_@local3_1 1_lit+_1 1_@_1 1_@_1 1_dup_1 1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lib-sym_1 1_dup_2 2_0=_2 2_?branch_1 1_call_1 
+1_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_laddr#_1 1_2@_2 2_drop_1 1_free_1 1_lit-perform_1 
+1_lp+2_1 1_;s_1 
+1_>l_1 1_lp-_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_lit_@_1 1_call_1 
+1_lit-perform_1 
+1_swap_2 2_>l_1 1_>l_1 1_@local3_1 1_noop_2 2_execute_1 
+1_noop_0 0_laddr#_1 1_2@_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_2@_3 3_>l_2 2_>l_1 1_dup_2 2_lit+_2 2_@_2 2_@_2 2_0=_2 2_?branch_1 1_lit-perform_1 
+1_call_1 
+1_@local1_2 2_lit+_2 2_!_0 0_@local1_1 1_noop_0 0_@local0_1 1_call_1 
+1_@local1_2 2_execute_1 
+1_lp+_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call-c_1 1_;s_1 
+1_>l_1 1_lp-_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_@local1_1 1_call_1 
+1_call_1 
+1_swap_1 1_call_1 
+1_lp+_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_lit_2 2_@_2 2_?branch_1 1_lit-perform_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_;s_1 
+1_lit_2 2_?branch_1 1_branch_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_lit_4 4_2!_1 1_call_1 
+1_lit_!_1 1_call_1 
+1_noop_0 0_lit@_1 1_call_1 
+1_branch_1 
+1_lit_2 2_lit_3 3_noop_0 0_lit@_1 1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_over_2 2_?branch_1 1_call_1 
+1_noop_0 0_over_1 1_call_1 
+1_branch_1 
+1_call_1 
+1_call_1 
+1_+_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_call_1 
+1_lit+_1 1_noop_0 0_lit_1 1_;s_1 
+1_swap_2 2_!_0 0_noop_1 1_;s_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_aligned_1 1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_aligned_1 1_noop_0 0_lit_1 1_cells_1 1_call_1 
+1_;s_1 
+1_faligned_1 1_noop_0 0_lit_1 1_floats_1 1_call_1 
+1_;s_1 
+1_sfaligned_1 1_noop_0 0_lit_1 1_sfloats_1 1_call_1 
+1_;s_1 
+1_dfaligned_1 1_noop_0 0_lit_1 1_dfloats_1 1_call_1 
+1_;s_1 
+1_lit_!_;s_1 
+1_dup_1 1_lit_2 2_useraddr_3 3_!_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_;s_1 
+1_within_1 1_0=_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_;s_1 
+1_call_1 
+1_noop_0 0_over_1 1_call_1 
+1_swap_1 1_cmove_1 1_;s_1 
+1_call_1 
+1_>r_1 1_2swap_1 1_call_1 
+1_call_1 
+1_noop_0 0_r>_1 1_call_1 
+1_over_2 2_-_1 1_lit_2 2_/_1 1_;s_1 
+1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_lit_3 3_lshift_2 2_or_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_lit_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lit_3 3_@local1_4 4_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_dup_2 2_lit_3 3_<_2 2_?branch_1 1_lit_2 2_*_1 1_branch_1 
+1_dup_1 1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_swap_2 2_noop_0 0_lit_1 1_rshift_1 1_or_1 
+1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_swap_2 2_>r_1 1_swap_2 2_lit_3 3_and_2 2_noop_0 0_lit_1 1_rshift_1 1_or_1 1_r>_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_lit_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_and_1 1_lit_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_@_2 2_lit_3 3_lshift_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit_2 2_lshift_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit_2 2_lshift_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_;s_1 
+1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_lit_3 3_lshift_2 2_or_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_lshift_1 1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_lit_2 2_lshift_1 1_lit_2 2_or_1 1_call_1 
+1_;s_1 
+1_dup_1 1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_swap_2 2_noop_0 0_lit_1 1_rshift_1 1_or_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_0 0_@local0_1 1_noop_0 0_@local1_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_1 1_dup_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_swap_2 2_drop_1 
+1_lit_2 2_lshift_1 1_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_over_2 2_lit_3 3_noop_0 0_lit_1 1_call_1 
+1_swap_1 1_dup_1 1_lit_2 2_and_1 1_0<>_1 1_lit_2 2_and_1 1_lit-perform_1 
+1_lit_2 2_and_1 1_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit_2 2_lshift_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_and_1 1_or_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_or_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_;s_1 
+1_swap_2 2_dup_3 3_lit_4 4_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_@_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_-_1 1_lit_2 2_and_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_lit_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_lit_2 2_and_1 1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_lit_2 2_and_1 1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_lit_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_call_1 
+1_-_1 1_lit_2 2_and_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_call_1 
+1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_lit_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_lit_2 2_and_1 1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_swap_2 2_>r_1 1_swap_1 1_lit_2 2_and_1 1_swap_2 2_lit_3 3_lshift_2 2_or_1 1_lit_2 2_or_1 1_noop_0 0_r>_1 1_swap_1 1_;s_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_dup_1 1_dup_@_1 1_swap_2 2_lit_3 3_cells_3 3_+_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_lit-perform_1 
+1_>l_1 1_>l_1 1_>l_0 0_lp-_0 0_lit_1 1_@local1_2 2_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lit_2 2_@local1_3 3_noop_0 0_@local2_1 1_@local3_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_call_1 
+1_lp+2_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_;s_1 
+1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_noop_0 0_lit_1 1_rshift_1 1_lit_2 2_and_1 1_;s_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_drop_1 1_;s_1 
+1_call_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_lit_1 1_call_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_swap_2 2_cells_2 2_+_1 1_;s_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_call_1 
+1_noop_2 2_lit_3 3_(?do)_1 
+1_noop_0 0_lit_1 1_call_1 
+1_(loop)_1 
+1_noop_0 0_unloop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_swap_2 2_cells_2 2_+_1 1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_;s_1 
+1_call_1 
+1_(u+do)_1 
+1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_noop_0 0_i_1 1_call_1 
+1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_i_2 2_noop_0 0_i_1 1_@_1 1_call_1 
+1_lit_2 2_cells_2 2_(+loop)_1 
+1_unloop_1 1_call_1 
+1_;s_1 
+1_dup_2 2_lit_3 3_and_2 2_?branch_1 1_lit_2 2_or_1 
+1_;s_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_dup_1 1_call_1 
+1_swap_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_call_1 
+1_dup_1 1_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_rshift_1 1_swap_1 1_call_1 
+1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_or_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_dup_1 1_call_1 
+1_noop_0 0_lit_1 1_rshift_1 1_swap_1 1_call_1 
+1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_or_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_lit_2 2_lshift_1 1_swap_1 1_call_1 
+1_or_1 1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_noop_2 2_invert_2 2_?branch_1 1_call_1 
+1_call_1 
+1_drop_1 1_branch_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_lit_2 2_and_1 1_lit_2 2_lshift_1 1_swap_2 2_noop_0 0_lit_1 1_rshift_1 1_or_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_dup_1 1_call_1 
+1_swap_1 1_call_1 
+1_lit_2 2_lshift_1 1_or_1 1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_dup_1 1_call_1 
+1_noop_2 2_lit_3 3_=_2 2_?branch_1 1_noop_0 0_lit_1 1_call_1 
+1_drop_1 1_branch_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_lit_2 2_lshift_1 1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_drop_1 1_;s_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_lit_2 2_over_3 3_=_2 2_?branch_1 1_drop_1 1_branch_1 
+1_lit_2 2_noop_0 0_lit_1 1_lit-perform_1 
+1_branch_1 
+1_drop_1 
+1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_xor_1 1_lit_2 2_-_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_swap_2 2_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_2 2_rot_3 3_+_2 2_noop_1 1_call_1 
+1_;s_1 
+1_lit_2 2_lshift_1 1_lit_2 2_xor_1 1_lit_2 2_-_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_call_1 
+1_swap_2 2_drop_1 1_;s_1 
+1_dup_1 1_call_1 
+1_call_1 
+1_noop_2 2_rot_3 3_+_2 2_noop_1 1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_dup_1 1_call_1 
+1_does-exec_1 
+1_noop_2 2_@_2 2_execute_1 
+1_call_1 
+1_call_1 
+1_;s_1 
+1_call_1 
+1_call_1 
+1_noop_0 0_lit_1 1_call_1 
+1_;s_1 
+1_2@_1 1_swap_1 1_call_1 
+1_lit-perform_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_call_1 
+1_noop_2 2_execute_1 
+1_call_1 
+1_swap_2 2_!_0 0_lit_1 1_call_1 
+1_;s_1 
+1_noop_2 2_2@_3 3_>r_2 2_execute_1 
+1_noop_0 0_r>_1 1_count_1 1_lit-perform_1 
+1_;s_1 
