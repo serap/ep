@@ -165,3 +165,13 @@ die Funktion vernachlässigen.
 sp07.c
 
 verbesserung der for-schleife in main
+
+8.)
+sp08.c
+
+Zusammenfassen von is_relocateable(X) in optimize_rewrite.
+Halbiert die Aufrufe von is_relocateable
+
+
+
+

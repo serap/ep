@@ -3978,9 +3978,7 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
 	  struct waypoint *wi=&(inst[i][c->state_in]);
 	  struct waypoint *wo=&(trans[i+j][c->state_out]);
 	  int no_transition = wo->no_transition;
-	  
 	  int is_relocable = is_relocatable(s);
-	  //if (!(is_relocatable(s)) && !wo->relocatable) {
 	  if (!is_relocable && !wo->relocatable) {
 	    wo=&(inst[i+j][c->state_out]);
 	    no_transition=1;
@@ -3991,7 +3989,6 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
 	  if (jcost <= wi->cost) {
 	    wi->cost = jcost;
 	    wi->inst = s;
-	    //wi->relocatable = is_relocatable(s);
 		wi->relocatable = is_relocable;
 	    wi->no_transition = no_transition;
 	    /* if (ss_greedy) wi->cost = wo->cost ? */
