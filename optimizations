@@ -160,3 +160,8 @@ inline static int cost_codesize (int prim) {
 
 Da diese Funktion nut einen wert zurück gibt, kann man den direkt auslesen und 
 die Funktion vernachlässigen.
+
+7.)
+sp07.c
+
+verbesserung der for-schleife in main
