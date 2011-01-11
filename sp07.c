@@ -3912,27 +3912,13 @@ void init_waypoints(struct waypoint ws[])
 
 void transitions(struct waypoint inst[], struct waypoint trans[])
 {
+  int k;
   struct super_state *l;
   
-    trans[0] = inst[0];
-    trans[1] = inst[1];
-	trans[2] = inst[2];
-	trans[3] = inst[3];
-	trans[4] = inst[4];
-	trans[5] = inst[5];
-    trans[6] = inst[6];
-	trans[7] = inst[7];
-	trans[8] = inst[8];
-    trans[0].no_transition = 1;
-	trans[1].no_transition = 1;
-	trans[2].no_transition = 1;
-	trans[3].no_transition = 1;
-	trans[4].no_transition = 1;
-	trans[5].no_transition = 1;
-	trans[6].no_transition = 1;
-	trans[7].no_transition = 1;
-	trans[8].no_transition = 1;
-
+  for (k=0; k<maxstates; k++) {
+    trans[k] = inst[k];
+    trans[k].no_transition = 1;
+  }
   for (l = state_transitions; l != NULL; l = l->next) {
     PrimNum s = l->super;
     int jcost;
