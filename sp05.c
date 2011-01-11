@@ -20,6 +20,7 @@
 */
 
 #include <stdio.h>
+#include <unistd.h>
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
@@ -37,7 +38,6 @@
 #define HAS_XCONDS
 #define HAS_STANDARDTHREADING
 
-// ENUM PRIM_NUM  (#
 typedef enum prim_num {
 /* definitions of N_execute etc. */
 N_paren_docol,
@@ -449,11 +449,12 @@ N_semi_abi_code_exec,
 N_lit_execute,
   N_START_SUPER
 } PrimNum;
-//#)
 
-#define static_super_number 10000 /* number of ss used if available */
+static int no_dynamic=0; /* if true, no code is generated
+					     dynamically */
+static int static_super_number = 10000; /* number of ss used if available */
 #define MAX_STATE 9 /* maximum number of states */
-#define maxstates MAX_STATE /* number of states for stack caching */
+static int maxstates = MAX_STATE; /* number of states for stack caching */
 
 FILE *output;
 
@@ -463,7 +464,6 @@ typedef void *Label;
 typedef long Cell;
 typedef unsigned long UCell;
 
-// typedef stuct PrimInfo (#
 typedef struct {
   Label start; /* NULL if not relocatable */
   Cell length; /* only includes the jump iff superend is true*/
@@ -476,9 +476,7 @@ typedef struct {
     char rel;    /* true if immarg is relative */
   } immargs[MAX_IMMARGS];
 } PrimInfo;
-//#)
 
-// PrimInfo priminfos[] (#
 PrimInfo priminfos[]={
   {(Label)0x100047bc, 8, 4, 1, 0, {{0, 0}, {0, 0}}},
   {(Label)0x100047d4, 16, 4, 0, 0, {{0, 0}, {0, 0}}},
@@ -1668,9 +1666,7 @@ PrimInfo priminfos[]={
   {(Label)0x1000fe2c, 36, 4, 0, 0, {{0, 0}, {0, 0}}},
   {(Label)0x1000fe60, 32, 4, 0, 0, {{0, 0}, {0, 0}}},
 };
-//#)
 
-// const char const* const prim_names[] (#
 const char const* const prim_names[]={
 "(docol)",
 "(docon)",
@@ -2080,11 +2076,14 @@ const char const* const prim_names[]={
 ";abi-code-exec",
 "lit-execute",
 };
-//#)
+
+static int is_relocatable(int p)
+{
+  return !no_dynamic && priminfos[p].start != NULL;
+}
 
 /* static superinstruction stuff */
 
-// struct cost (#
 struct cost { /* super_info might be a more accurate name */
   char loads;       /* number of stack loads */
   char stores;      /* number of stack stores */
@@ -2096,10 +2095,7 @@ struct cost { /* super_info might be a more accurate name */
   short offset;     /* offset into super2 table */
   unsigned char length;      /* number of components */
 };
-//#)
 
-
-// PrimNum super2[] (#
 PrimNum super2[] = {
 N_paren_docol, /* (docol) */
 N_paren_docon, /* (docon) */
@@ -2522,10 +2518,7 @@ N_fetch,N_semis, /* super25 */
 N_lit,N_fetch,N_plus, /* super26 */
 N_dupe,N_fetch, /* super27 */
 };
-//#)
 
-
-// struct cost super_costs[] (#
 struct cost super_costs[] = {
 { 0, 1, 1, 1 , 0, 0,0,N_paren_docol, 1}, /* (docol) */
 { 0, 1, 1, 0 , 0, 0,0,N_paren_docon, 1}, /* (docon) */
@@ -3774,111 +3767,118 @@ struct cost super_costs[] = {
 {-1, 0, 0, 0 , 6, 8,0,N_noop, 1}, /* noop */
 {-1, 0, 0, 0 , 7, 8,0,N_noop, 1}, /* noop */
 };
-//#)
 
-// struct super_state (#
 struct super_state {
   struct super_state *next;
   PrimNum super;
 };
-//#)
 
 #define HASH_SIZE 256
 
-// struct super_table_entry (#
 struct super_table_entry {
   struct super_table_entry *next;
   PrimNum *start;
   short length;
   struct super_state *ss_list; /* list of supers */
 } *super_table[HASH_SIZE];
-//#)
-
-int max_super = 2;
+int max_super=2;
 
 struct super_state *state_transitions=NULL;
 
-// static int hash_super (PrimNum *start, int length) (#
-inline static int hash_super (PrimNum *start, int length) __attribute__((always_inline));
-inline static int hash_super (PrimNum *start, int length) {
-	int i, r;
-
-	for (i = 0, r = 0; i < length; i++) {
-		r <<= 1;
-		r += start [i];
-	}
-
-	return r & (HASH_SIZE-1);
-}
-//#)
-
-// static struct super_state **lookup_super (PrimNum *start, int length) (#
-inline static struct super_state **lookup_super (PrimNum *start, int length) __attribute__((always_inline));
-inline static struct super_state **lookup_super (PrimNum *start, int length)
+static int hash_super(PrimNum *start, int length)
 {
-	int hash = hash_super (start, length);
-	struct super_table_entry *p = super_table [hash];
-
-	/* CHANGE */
-	/* assert(length >= 2); */
-	for (; p != NULL; p = p->next) 
-	{
-/*
-		if (length == p->length && memcmp ((char *)p->start, (char *)start, length * sizeof (PrimNum)) == 0) {
-			return &(p->ss_list);
-		}
-*/
-		if (( length == p->length ) && ( 
-			( (length == 1 && (int*)p->start == (int*)start) 
-				|| ( length == 2 && (long*)p->start == (long*)start ) 
-				|| ( memcmp ((char *)p->start, (char *)start, length * sizeof (PrimNum)) == 0) 
-			) 
-		)) {
-			return &(p->ss_list);
-		}
-	/* END CHANGE */
-
-	}
-
-	return NULL;
+  int i, r;
+  
+  for (i=0, r=0; i<length; i++) {
+    r <<= 1;
+    r += start[i];
+  }
+  return r & (HASH_SIZE-1);
 }
-//#)
+
+static struct super_state **lookup_super(PrimNum *start, int length)
+{
+  int hash=hash_super(start,length);
+  struct super_table_entry *p = super_table[hash];
+
+  /* assert(length >= 2); */
+  for (; p!=NULL; p = p->next) {
+    if (length == p->length &&
+	memcmp((char *)p->start, (char *)start, length*sizeof(PrimNum))==0)
+      return &(p->ss_list);
+  }
+  return NULL;
+}
+
+static void prepare_super_table()
+{
+  int i;
+  int nsupers = 0;
+
+  for (i=0; i<sizeof(super_costs)/sizeof(super_costs[0]); i++) {
+    struct cost *c = &super_costs[i];
+    if ((c->length < 2 || nsupers < static_super_number) &&
+	c->state_in < maxstates && c->state_out < maxstates) {
+      struct super_state **ss_listp= lookup_super(super2+c->offset, c->length);
+      struct super_state *ss = malloc(sizeof(struct super_state));
+      ss->super= i;
+      if (c->offset==N_noop && i != N_noop) {
+	if (is_relocatable(i)) {
+	  ss->next = state_transitions;
+	  state_transitions = ss;
+	}
+      } else if (ss_listp != NULL) {
+	ss->next = *ss_listp;
+	*ss_listp = ss;
+      } else {
+	int hash = hash_super(super2+c->offset, c->length);
+	struct super_table_entry **p = &super_table[hash];
+	struct super_table_entry *e = malloc(sizeof(struct super_table_entry));
+	ss->next = NULL;
+	e->next = *p;
+	e->start = super2 + c->offset;
+	e->length = c->length;
+	e->ss_list = ss;
+	*p = e;
+      }
+      if (c->length > max_super)
+	max_super = c->length;
+      if (c->length >= 2)
+	nsupers++;
+    }
+  }
+}
 
 Cell npriminfos=0;
 
-// static int cost_codesize (int prim) (#
-inline static int cost_codesize (int prim) __attribute__((always_inline)); 
-inline static int cost_codesize (int prim) {
+static int cost_codesize(int prim)
+{
   return priminfos[prim].length;
 }
-//#)
 
-// static int cost_ls (int prim) (#
-static int cost_ls (int prim) {
-  struct cost *c = super_costs + prim;
+static int cost_ls(int prim)
+{
+  struct cost *c = super_costs+prim;
+
   return c->loads + c->stores;
 }
-//#)
 
-// static int cost_lsu (int prim) (#
-static int cost_lsu (int prim) {
-  struct cost *c = super_costs + prim;
+static int cost_lsu(int prim)
+{
+  struct cost *c = super_costs+prim;
+
   return c->loads + c->stores + c->updates;
 }
-//#)
 
-// static int cost_nexts (int prim) (#
-static int cost_nexts (int prim)
+static int cost_nexts(int prim)
 {
   return 1;
 }
-//#)
 
 typedef int Costfunc(int);
 Costfunc *ss_cost =  /* cost function for optimize_bb */
 cost_codesize;
 
-// struct cost_sums[] (#
 struct {
   Costfunc *costfunc;
   char *metricname;
@@ -3889,14 +3889,11 @@ struct {
   { cost_lsu,      "lsu",      0 },
   { cost_nexts,    "nexts",    0 }
 };
-//#)
 
 #define MAX_BB 128 /* maximum number of instructions in BB */
 #define INF_COST 1000000 /* infinite cost */
 #define CANONICAL_STATE 0
 
-
-// struct waypoint (#
 struct waypoint {
   int cost;     /* the cost from here to the end */
   PrimNum inst; /* the inst used from here to the next waypoint */
@@ -3904,268 +3901,159 @@ struct waypoint {
   char no_transition; /* don't use the next transition (relocatability)
 		       * or this transition (does not change state) */
 };
-//#)
 
+void init_waypoints(struct waypoint ws[])
+{
+  int k;
 
-#define PRINTINST                            \
-        putchar (states [c->state_in]);      \
-        putchar ('_');                       \
-                                             \
-        for (printinst_i = c->length, printinst_ptr = super2 + c->offset; printinst_i; printinst_i--, printinst_ptr++)  \
-        {                                                                       \
-                fputs (prim_names [*printinst_ptr], stdout);                        \
-                putchar ('_');               \
-        }                                    \
-        putchar (states [c->state_out]);     \
-        putchar (' ');
+  for (k=0; k<maxstates; k++)
+    ws[k].cost=INF_COST;
+}
+
+void transitions(struct waypoint inst[], struct waypoint trans[])
+{
+  int k;
+  struct super_state *l;
+  
+  for (k=0; k<maxstates; k++) {
+    trans[k] = inst[k];
+    trans[k].no_transition = 1;
+  }
+  for (l = state_transitions; l != NULL; l = l->next) {
+    PrimNum s = l->super;
+    int jcost;
+    struct cost *c=super_costs+s;
+    struct waypoint *wi=&(trans[c->state_in]);
+    struct waypoint *wo=&(inst[c->state_out]);
+    if (wo->cost == INF_COST)
+      continue;
+    jcost = wo->cost + cost_codesize(s);
+    if (jcost <= wi->cost) {
+      wi->cost = jcost;
+      wi->inst = s;
+      wi->relocatable = wo->relocatable;
+      wi->no_transition = 0;
+      /* if (ss_greedy) wi->cost = wo->cost ? */
+    }
+  }
+}
+
+void printinst(struct cost *c)
+{
+  int i;
+  static char *states="1023456789";
+
+  putchar(states[c->state_in]);
+  putchar('_');
+  for (i=0; i<c->length; i++) {
+    fputs(prim_names[super2[c->offset+i]],stdout);
+    putchar('_');
+  }
+  putchar(states[c->state_out]);
+  putchar(' ');
+}
+
+/* use dynamic programming to find the shortest paths within the basic
+   block origs[0..ninsts-1] */
+void optimize_rewrite(PrimNum origs[], int ninsts)
+{
+  int i,j;
+  static struct waypoint inst[MAX_BB+1][MAX_STATE];  /* before instruction*/
+  static struct waypoint trans[MAX_BB+1][MAX_STATE]; /* before transition */
+  int nextdyn, nextstate, no_transition;
+  
+  init_waypoints(inst[ninsts]);
+  inst[ninsts][CANONICAL_STATE].cost=0;
+  transitions(inst[ninsts],trans[ninsts]);
+  for (i=ninsts-1; i>=0; i--) {
+    init_waypoints(inst[i]);
+    for (j=1; j<=max_super && i+j<=ninsts; j++) {
+      struct super_state **superp = lookup_super(origs+i, j);
+      if (superp!=NULL) {
+	struct super_state *supers = *superp;
+	for (; supers!=NULL; supers = supers->next) {
+	  PrimNum s = supers->super;
+	  int jcost;
+	  struct cost *c=super_costs+s;
+	  struct waypoint *wi=&(inst[i][c->state_in]);
+	  struct waypoint *wo=&(trans[i+j][c->state_out]);
+	  int no_transition = wo->no_transition;
+	  if (!(is_relocatable(s)) && !wo->relocatable) {
+	    wo=&(inst[i+j][c->state_out]);
+	    no_transition=1;
+	  }
+	  if (wo->cost == INF_COST) 
+	    continue;
+	  jcost = wo->cost + cost_codesize(s);
+	  if (jcost <= wi->cost) {
+	    wi->cost = jcost;
+	    wi->inst = s;
+	    wi->relocatable = is_relocatable(s);
+	    wi->no_transition = no_transition;
+	    /* if (ss_greedy) wi->cost = wo->cost ? */
+	  }
+	}
+      }
+    }
+    transitions(inst[i],trans[i]);
+  }
+  /* now rewrite the instructions */
+  nextdyn=0;
+  nextstate=CANONICAL_STATE;
+  no_transition = ((!trans[0][nextstate].relocatable) 
+		   ||trans[0][nextstate].no_transition);
+  for (i=0; i<ninsts; i++) {
+    if (i==nextdyn) {
+      if (!no_transition) {
+	/* process trans */
+	PrimNum p = trans[i][nextstate].inst;
+	struct cost *c = super_costs+p;
+	assert(trans[i][nextstate].cost != INF_COST);
+	assert(c->state_in==nextstate);
+	printinst(c);
+	nextstate = c->state_out;
+      }
+      {
+	/* process inst */
+	PrimNum p = inst[i][nextstate].inst;
+	struct cost *c=super_costs+p;
+	assert(c->state_in==nextstate);
+	assert(inst[i][nextstate].cost != INF_COST);
+	printinst(c);
+	no_transition = inst[i][nextstate].no_transition;
+	nextstate = c->state_out;
+	nextdyn += c->length;
+      }
+    }
+  }      
+  if (!no_transition) {
+    PrimNum p = trans[i][nextstate].inst;
+    struct cost *c = super_costs+p;
+    assert(c->state_in==nextstate);
+    assert(trans[i][nextstate].cost != INF_COST);
+    assert(i==nextdyn);
+    printinst(c);
+    nextstate = c->state_out;
+  }
+  printf("\n");
+  assert(nextstate==CANONICAL_STATE);
+}
 
 #define MAX_INPUT_SIZE 100000
 
-
-// inline void inner_function( struct cost *c, int *i ) (#
-inline void inner_function( struct cost *c, int i ) __attribute__((always_inline)); // force the inlining
-inline void inner_function( struct cost *c, int i ) {
-	if (c->state_in < maxstates && c->state_out < maxstates)				
-	{																		
-		PrimNum *temp = super2 + c->offset;									
-		struct super_state **ss_listp = lookup_super (temp, c->length);		
-		struct super_state *ss = malloc (sizeof (struct super_state));		
-		ss->super = i;														
-		if (c->offset == N_noop && i != N_noop)								
-		{																	
-			if (priminfos [i].start != NULL)								
-			{																
-				ss->next = state_transitions;								
-				state_transitions = ss;										
-			}																
-		}																	
-		else if (ss_listp != NULL)											
-		{																	
-			ss->next = *ss_listp;											
-			*ss_listp = ss;													
-		}																	
-		else {																	
-			int hash = hash_super (temp, c->length);						
-			struct super_table_entry **p = &super_table [hash];				
-			struct super_table_entry *e = malloc (sizeof (struct super_table_entry));	
-			ss->next = NULL;												
-			e->next = *p;													
-			e->start = temp;												
-			e->length = c->length;											
-			e->ss_list = ss;												
-			*p = e;															
-		}																	
-	}
-}
-//#)
-
-// int main (int argc, char **argv, char **env) (#
-int main (int argc, char **argv, char **env)
+int main(int argc, char **argv, char **env)
 {
-	PrimNum data [MAX_INPUT_SIZE];
-	PrimNum *origs;
-	size_t input_size;
-	PrimNum *ptr;
-	int ninsts;
+  PrimNum data[MAX_INPUT_SIZE];
+  PrimNum *start = data;
+  size_t input_size;
+  int i;
 
-	int i;
-	int nsupers = 0;
-
-  int printinst_i;
-  const char *states = "1023456789";
-  PrimNum *printinst_ptr;
-	for (i = 0; i < sizeof (super_costs) / sizeof (super_costs [0]); i++) 
-	{
-		struct cost *c = &(super_costs[i]);
-		if (c->length < 2)
-		{
-			//INNERFUNC01
-			inner_function ( c, i );
-		}
-		else if (nsupers < static_super_number)
-		{
-			//INNERFUNC01
-			inner_function ( c, i );
-
-			/* c->length >= 2 */
-			nsupers++;
-			if (c->length > max_super)
-				max_super = c->length;
-		}
-	}
-
-	input_size = fread (data, sizeof (PrimNum), MAX_INPUT_SIZE, stdin);
-
-	for (ptr = origs = data, ninsts = 0; input_size; input_size--, ptr++, ninsts++) {
-		if (*ptr == -1) {
-			int i, j, k, l;
-
-      struct super_state *m;
-			static struct waypoint inst [MAX_BB + 1] [MAX_STATE];  /* before instruction*/
-			static struct waypoint trans [MAX_BB + 1] [MAX_STATE]; /* before transition */
-			int nextdyn, nextstate, no_transition;
-
-			for (k = maxstates - 1; k; k--)
-				inst [ninsts] [k].cost = INF_COST;
-			inst [ninsts] [0].cost = INF_COST;
-			inst [ninsts] [CANONICAL_STATE].cost = 0;
-
-		 	for (k = maxstates - 1; k; k--) 
-			{
-				trans [ninsts] [k] = inst [ninsts] [k];
-				trans [ninsts] [k].no_transition = 1;
-			}
-
-			trans [ninsts] [0] = inst [ninsts] [0];
-			trans [ninsts] [0].no_transition = 1;
-
-			for (m = state_transitions; m != NULL; m = m->next)
-			{
-				PrimNum s = m->super;
-				int jcost;
-				struct cost *c = super_costs + s;
-				struct waypoint *wi = &(trans [ninsts] [c->state_in]);
-				struct waypoint *wo = &(inst [ninsts] [c->state_out]);
-				if (wo->cost == INF_COST)
-					continue;
-				jcost = wo->cost + ss_cost (s);
-				if (jcost <= wi->cost) 
-				{
-					wi->cost = jcost;
-					wi->inst = s;
-					wi->relocatable = wo->relocatable;
-					wi->no_transition = 0;
-					/* if (ss_greedy) wi->cost = wo->cost ? */
-				}
-			}
-
-			for (l = ninsts; l; l--) {
-				int i = l - 1;
-				for (k = maxstates - 1; k; k--) {
-					inst[i][k].cost = INF_COST;
-				}
-
-				inst[i][0].cost = INF_COST;
-
-        for (j = 1; j <= max_super && i + j <= ninsts; j++) {
-					struct super_state **superp = lookup_super (origs + i, j);
-					if (superp != NULL) 
-					{
-						struct super_state *supers = *superp;
-						do
-						{
-							PrimNum s = supers->super;
-							int jcost;
-							int temp = i + j;
-							struct cost *c = super_costs + s;
-							struct waypoint *wi = &(inst [i] [c->state_in]);
-              struct waypoint *wo = &(trans [temp] [c->state_out]);
-							int no_transition = wo->no_transition;
-
-							if (priminfos [s].start == NULL && !wo->relocatable) 
-							{
-                wo = &(inst [temp] [c->state_out]);
-								no_transition = 1;
-							}
-							if (wo->cost == INF_COST) 
-								continue;
-							jcost = wo->cost + ss_cost(s);
-							if (jcost <= wi->cost) 
-							{
-								wi->cost = jcost;
-								wi->inst = s;
-								wi->relocatable = priminfos [s].start != NULL;
-								wi->no_transition = no_transition;
-								/* if (ss_greedy) wi->cost = wo->cost ? */
-							}
-							supers = supers->next;
-						} while (supers != NULL);
-					}
-				}
-
-				for (k = maxstates - 1; k; k--) 
-				{
-								trans [i] [k] = inst [i] [k];
-								trans [i] [k].no_transition = 1;
-				}
-
-				trans [i] [0] = inst [i] [0];
-				trans [i] [0].no_transition = 1;
-
-				for (m = state_transitions; m != NULL; m = m->next)
-				{
-					PrimNum s = m->super;
-					int jcost;
-					struct cost *c = super_costs + s;
-					struct waypoint *wi = &(trans [i] [c->state_in]);
-					struct waypoint *wo = &(inst [i] [c->state_out]);
-					if (wo->cost == INF_COST)
-						continue;
-					jcost = wo->cost + ss_cost (s);
-					if (jcost <= wi->cost) 
-					{
-						wi->cost = jcost;
-						wi->inst = s;
-						wi->relocatable = wo->relocatable;
-						wi->no_transition = 0;
-						/* if (ss_greedy) wi->cost = wo->cost ? */
-					}
-				}
-			}
-
-			/* now rewrite the instructions */
-			nextdyn = 0;
-			nextstate = CANONICAL_STATE;
-			no_transition = ((!trans [0] [nextstate].relocatable) || trans [0] [nextstate].no_transition);
-			for (i = nextdyn; i < ninsts; ) 
-			{
-					if (!no_transition) 
-					{
-						/* process trans */
-						struct cost *c = super_costs + trans [i] [nextstate].inst;
-						assert (trans [i] [nextstate].cost != INF_COST);
-						assert (c->state_in == nextstate);
-						PRINTINST
-						nextstate = c->state_out;
-					}
-					{
-						/* process inst */
-						struct cost *c = super_costs + inst [i] [nextstate].inst;
-						assert (c->state_in == nextstate);
-						assert (inst [i] [nextstate].cost != INF_COST);
-						PRINTINST
-						no_transition = inst [i] [nextstate].no_transition;
-						nextstate = c->state_out;
-						if (c->length > 0)
-						{
-							nextdyn += c->length;
-							i = nextdyn;
-						}
-						else
-							i = ninsts;
-					}
-			}
-			
-			if (!no_transition) 
-			{
-				struct cost *c = super_costs + trans [i] [nextstate].inst;
-				assert (c->state_in == nextstate);
-				assert (trans [i] [nextstate].cost != INF_COST);
-				assert (i == nextdyn);
-				PRINTINST
-				nextstate = c->state_out;
-			}
-			
-			printf("\n");
-			assert (nextstate == CANONICAL_STATE);
-
-			origs = ptr;
-			origs++;
-			ninsts = -1;
-		}
-	}
-
-	return 0;
-
+  prepare_super_table();
+  input_size = fread(data,sizeof(PrimNum),MAX_INPUT_SIZE,stdin);
+  for (i = 0; i<input_size; i++)
+    if (data[i] == -1) {
+      optimize_rewrite(start, data+i-start);
+      start = data+i+1;
+    }
+  return 0;
 }
-//#)

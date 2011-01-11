@@ -158,3 +158,46 @@ codesize: 193982
   1        100.000  call_gmon_start [self]
 -------------------------------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+
+5.)
+
+sp05.c
+
+typedef int Costfunc(int);
+Costfunc *ss_cost =  /* cost function for optimize_bb */
+cost_codesize;
+
+dieser teil wurde übergangen und an den stellen, wo ss_cost eingesetzt war wurde 
+direkt cost_codesize eingesetzt. Dies sollte einen großen vorteil bringen, da 
+viele berechnungen eingespart werden.
+
+6.)
+sp06.c
+
+// static int cost_codesize (int prim) (#
+inline static int cost_codesize (int prim) __attribute__((always_inline)); 
+inline static int cost_codesize (int prim) {
+  return priminfos[prim].length;
+}
+//#)
+
+Da diese Funktion nut einen wert zurück gibt, kann man den direkt auslesen und 
+die Funktion vernachlässigen.
+
+7.)
+sp07.c
+
+verbesserung der for-schleife in main
+
+8.)
+sp08.c
+
+Zusammenfassen von is_relocateable(X) in optimize_rewrite.
+Halbiert die Aufrufe von is_relocateable
+
+
+
+
+>>>>>>> d9f86ad0d2c0dfe80976309b897b165bc67bb9dd
