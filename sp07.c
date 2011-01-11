@@ -3914,24 +3914,24 @@ void transitions(struct waypoint inst[], struct waypoint trans[])
 {
   struct super_state *l;
   
-    trans[k] = inst[k];
-    trans[k+1] = inst[k+1];
-	trans[k+2] = inst[k+2];
-	trans[k+3] = inst[k+3];
-	trans[k+4] = inst[k+4];
-	trans[k+5] = inst[k+5];
-    trans[k+6] = inst[k+6];
-	trans[k+7] = inst[k+7];
-	trans[k+8] = inst[k+8];
-    trans[k].no_transition = 1;
-	trans[k+1].no_transition = 1;
-	trans[k+2].no_transition = 1;
-	trans[k+3].no_transition = 1;
-	trans[k+4].no_transition = 1;
-	trans[k+5].no_transition = 1;
-	trans[k+6].no_transition = 1;
-	trans[k+7].no_transition = 1;
-	trans[k+8].no_transition = 1;
+    trans[0] = inst[0];
+    trans[1] = inst[1];
+	trans[2] = inst[2];
+	trans[3] = inst[3];
+	trans[4] = inst[4];
+	trans[5] = inst[5];
+    trans[6] = inst[6];
+	trans[7] = inst[7];
+	trans[8] = inst[8];
+    trans[0].no_transition = 1;
+	trans[1].no_transition = 1;
+	trans[2].no_transition = 1;
+	trans[3].no_transition = 1;
+	trans[4].no_transition = 1;
+	trans[5].no_transition = 1;
+	trans[6].no_transition = 1;
+	trans[7].no_transition = 1;
+	trans[8].no_transition = 1;
 
   for (l = state_transitions; l != NULL; l = l->next) {
     PrimNum s = l->super;
