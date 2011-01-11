@@ -134,3 +134,29 @@ codesize: 193879
 1        8.0e-05  call_gmon_start
   1        100.000  call_gmon_start [self]
 -------------------------------------------------------------------------------
+
+
+5.)
+
+sp05.c
+
+typedef int Costfunc(int);
+Costfunc *ss_cost =  /* cost function for optimize_bb */
+cost_codesize;
+
+dieser teil wurde übergangen und an den stellen, wo ss_cost eingesetzt war wurde 
+direkt cost_codesize eingesetzt. Dies sollte einen großen vorteil bringen, da 
+viele berechnungen eingespart werden.
+
+6.)
+sp06.c
+
+// static int cost_codesize (int prim) (#
+inline static int cost_codesize (int prim) __attribute__((always_inline)); 
+inline static int cost_codesize (int prim) {
+  return priminfos[prim].length;
+}
+//#)
+
+Da diese Funktion nut einen wert zurück gibt, kann man den direkt auslesen und 
+die Funktion vernachlässigen.
