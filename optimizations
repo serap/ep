@@ -133,7 +133,7 @@ codesize: 193862
 -------------------------------------------------------------------------------
 
 
-5.) wo->cost in eine temporaeren variable speichern, scheint nicht wirklich etwas zu bringen
+5a.) wo->cost in eine temporaeren variable speichern, scheint nicht wirklich etwas zu bringen
 codesize: 193982
 -------------------------------------------------------------------------------
 1149942  92.8966  optimize_rewrite
@@ -157,9 +157,6 @@ codesize: 193982
 1        8.1e-05  call_gmon_start
   1        100.000  call_gmon_start [self]
 -------------------------------------------------------------------------------
-
-<<<<<<< HEAD
-=======
 
 5.)
 
@@ -196,8 +193,3 @@ sp08.c
 
 Zusammenfassen von is_relocateable(X) in optimize_rewrite.
 Halbiert die Aufrufe von is_relocateable
-
-
-
-
->>>>>>> d9f86ad0d2c0dfe80976309b897b165bc67bb9dd
