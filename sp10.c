@@ -3924,7 +3924,7 @@ void transitions(struct waypoint inst[], struct waypoint trans[])
     struct cost *c=super_costs+s;
     struct waypoint *wi=&(trans[c->state_in]);
     struct waypoint *wo=&(inst[c->state_out]);
-    if (wo->cost != INF_COST && jcost = wo->cost + priminfos[s].length <= wi->cost){
+    if (wo->cost != INF_COST && (jcost = wo->cost + priminfos[s].length) <= wi->cost){
           wi->cost = jcost;
           wi->inst = s;
           wi->relocatable = wo->relocatable;
@@ -3979,7 +3979,7 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
             wo=&(inst[i+j][c->state_out]);
             no_transition=1;
           }
-          if (wo->cost != INF_COST && jcost = wo->cost + priminfos[s].length <= wi->cost){ {
+          if (wo->cost != INF_COST && (jcost = wo->cost + priminfos[s].length) <= wi->cost){ {
             wi->cost = jcost;
             wi->inst = s;
             wi->relocatable = is_relocable;
