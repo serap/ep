@@ -161,6 +161,7 @@ codesize: 193982
 5.)
 
 sp05.c
+codesize: 194300
 
 typedef int Costfunc(int);
 Costfunc *ss_cost =  /* cost function for optimize_bb */
@@ -192,6 +193,7 @@ viele berechnungen eingespart werden.
 
 6.)
 sp06.c
+codesize: 193948
 
 // static int cost_codesize (int prim) (#
 inline static int cost_codesize (int prim) __attribute__((always_inline)); 
@@ -225,6 +227,7 @@ die Funktion vernachlässigen.
 
 7.)
 sp07.c
+codesize: 194084
 verbesserung der for-schleife in main
 
 -------------------------------------------------------------------------------
@@ -243,7 +246,7 @@ verbesserung der for-schleife in main
 
 8.)
 sp08.c
-
+codesize: 194116
 Zusammenfassen von is_relocateable(X) in optimize_rewrite.
 Halbiert die Aufrufe von is_relocateable
 
@@ -263,3 +266,9 @@ Halbiert die Aufrufe von is_relocateable
 1        8.8e-05  _init
   1        100.000  _init [self]
 -------------------------------------------------------------------------------
+
+9.)
+sp09.c
+codesize: 193088
+
+assertions aus sp08 entfernt, bringt kleinere codesize sonst keine vorteile
