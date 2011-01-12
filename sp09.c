@@ -3969,30 +3969,30 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
     for (j=1; j<=max_super && i+j<=ninsts; j++) {
       struct super_state **superp = lookup_super(origs+i, j);
       if (superp!=NULL) {
-	struct super_state *supers = *superp;
-	for (; supers!=NULL; supers = supers->next) {
-	  PrimNum s = supers->super;
-	  int jcost;
-	  struct cost *c=super_costs+s;
-	  struct waypoint *wi=&(inst[i][c->state_in]);
-	  struct waypoint *wo=&(trans[i+j][c->state_out]);
-	  int no_transition = wo->no_transition;
-	  int is_relocable = is_relocatable(s);
-	  if (!is_relocable && !wo->relocatable) {
-	    wo=&(inst[i+j][c->state_out]);
-	    no_transition=1;
-	  }
-	  if (wo->cost == INF_COST) 
-	    continue;
-	  jcost = wo->cost + priminfos[s].length;
-	  if (jcost <= wi->cost) {
-	    wi->cost = jcost;
-	    wi->inst = s;
-		wi->relocatable = is_relocable;
-	    wi->no_transition = no_transition;
-	    /* if (ss_greedy) wi->cost = wo->cost ? */
-	  }
-	}
+        struct super_state *supers = *superp;
+        for (; supers!=NULL; supers = supers->next) {
+          PrimNum s = supers->super;
+          int jcost;
+          struct cost *c=super_costs+s;
+          struct waypoint *wi=&(inst[i][c->state_in]);
+          struct waypoint *wo=&(trans[i+j][c->state_out]);
+          int no_transition = wo->no_transition;
+          int is_relocable = is_relocatable(s);
+          if (!is_relocable && !wo->relocatable) {
+            wo=&(inst[i+j][c->state_out]);
+            no_transition=1;
+          }
+          if (wo->cost == INF_COST) 
+            continue;
+          jcost = wo->cost + priminfos[s].length;
+          if (jcost <= wi->cost) {
+            wi->cost = jcost;
+            wi->inst = s;
+            wi->relocatable = is_relocable;
+            wi->no_transition = no_transition;
+            /* if (ss_greedy) wi->cost = wo->cost ? */
+          }
+        }
       }
     }
     transitions(inst[i],trans[i]);
