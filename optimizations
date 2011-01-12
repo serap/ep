@@ -299,5 +299,9 @@ if (wo->cost != INF_COST && (jcost = wo->cost + priminfos[s].length) <= wi->cost
           }
 
 wieviel das jetzt bringt, oder ob das die ganze sache verschlechtert weiß ich noch nicht.
+Außerdem kann man nach meiner erkenntnis die zwei Bedinungen in der if einfach vertauschen.
+Welche variante jetzt die effektivere ist, ob wo->cost != INF_COST vorne stehen soll oder
+(jcost = wo->cost + priminfos[s].length) <= wi->cost wäre einfach mal auszuprobieren.
+
 
 
