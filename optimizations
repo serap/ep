@@ -272,3 +272,32 @@ sp09.c
 codesize: 193088
 
 assertions aus sp08 entfernt, bringt kleinere codesize sonst keine vorteile
+
+10.)
+
+sp10.c
+
+if (wo->cost == INF_COST)
+      continue;
+    jcost = wo->cost + priminfos[s].length;
+    if (jcost <= wi->cost) {
+      wi->cost = jcost;
+      wi->inst = s;
+      wi->relocatable = wo->relocatable;
+      wi->no_transition = 0;
+      /* if (ss_greedy) wi->cost = wo->cost ? */
+    }
+
+wird in der funktion optimize_rewrite und transitions ersetzt durch
+
+if (wo->cost != INF_COST && (jcost = wo->cost + priminfos[s].length) <= wi->cost){
+            wi->cost = jcost;
+            wi->inst = s;
+            wi->relocatable = is_relocable;
+            wi->no_transition = no_transition;
+            /* if (ss_greedy) wi->cost = wo->cost ? */
+          }
+
+wieviel das jetzt bringt, oder ob das die ganze sache verschlechtert weiß ich noch nicht.
+
+
