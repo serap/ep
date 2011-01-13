@@ -3776,9 +3776,9 @@ struct super_state {
 
 struct super_table_entry {
   struct super_table_entry *next;
+  struct super_state *ss_list; /* list of supers */
   PrimNum *start;
   short length;
-  struct super_state *ss_list; /* list of supers */
 } *super_table[HASH_SIZE];
 int max_super=2;
 
@@ -4022,14 +4022,14 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
     printinst(c);
     nextstate = c->state_out;
   }
-  printf("\n");
+  puts("");
 }
 
 #define MAX_INPUT_SIZE 100000
 
 int main(int argc, char **argv, char **env)
 {
-	PrimNum data [MAX_INPUT_SIZE];
+	PrimNum data[MAX_INPUT_SIZE];
 	PrimNum *start;
 	size_t input_size;
 	PrimNum *i;
@@ -4038,12 +4038,11 @@ int main(int argc, char **argv, char **env)
   prepare_super_table();
   input_size = fread(data,sizeof(PrimNum),MAX_INPUT_SIZE,stdin);
   for (i = start = data, ninsts = 0; input_size; input_size--, i++, ninsts++)
-                if (*i == -1) 
-                {
-                        optimize_rewrite (start, ninsts);
-                        start = i;
-                        start++;
-                        ninsts = -1;
-                }
+    if (*i == -1) {
+      optimize_rewrite (start, ninsts);
+      start = i;
+      start++;
+      ninsts = -1;
+    }
   return 0;
 }

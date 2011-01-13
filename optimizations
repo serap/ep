@@ -332,7 +332,12 @@ werden, da die Registerbelegung unguenstiger wird. Jedoch wird das Programm
 schneller. Weiters habe ich ausprobiert wie sich die von wiesel vorgeschlagene
 Optimierung aus 10 verhaelt wenn man die Ausdruecke bei dem logischen and
 vertauscht - hat aber den generierten Code nicht verbessert.
-codesize: 193488
+
+Weiters wird puts statt printf verwendet und das super_table_entry struct
+veraendert (dadurch verbessert sich das padding), dies bringt aber auch nur
+marginale Vorteile.
+
+codesize: 193485
 
 -------------------------------------------------------------------------------
 1132404  99.4006  1664292  99.5130  optimize_rewrite
