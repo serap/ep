@@ -276,6 +276,7 @@ assertions aus sp08 entfernt, bringt kleinere codesize sonst keine vorteile
 10.)
 
 sp10.c
+codesize: 193136
 
 if (wo->cost == INF_COST)
       continue;
@@ -303,5 +304,49 @@ Außerdem kann man nach meiner erkenntnis die zwei Bedinungen in der if einfach 
 Welche variante jetzt die effektivere ist, ob wo->cost != INF_COST vorne stehen soll oder
 (jcost = wo->cost + priminfos[s].length) <= wi->cost wäre einfach mal auszuprobieren.
 
+-------------------------------------------------------------------------------
+1160485  99.4056  1636071  99.5137  optimize_rewrite
+  1160485  100.000  1636071  100.000  optimize_rewrite [self]
+-------------------------------------------------------------------------------
+6930      0.5936  7994      0.4862  main
+  6930     100.000  7994     100.000  main [self]
+-------------------------------------------------------------------------------
+5        4.3e-04  0              0  __libc_csu_init
+  5        100.000  0              0  __libc_csu_init [self]
+-------------------------------------------------------------------------------
+2        1.7e-04  0              0  _start
+  2        100.000  0              0  _start [self]
+-------------------------------------------------------------------------------
+1        8.6e-05  1        6.1e-05  __do_global_dtors_aux
+  1        100.000  1        100.000  __do_global_dtors_aux [self]
+-------------------------------------------------------------------------------
+1        8.6e-05  0              0  frame_dummy
+  1        100.000  0              0  frame_dummy [self]
+-------------------------------------------------------------------------------
 
 
+11.) 
+Ich habe -fno-fomit-frame-pointer in das buildscript eingebaut weil ich schauen
+wollte wie sich das Programm dabei verhaelt - eigentlich sollte es langsamer
+werden, da die Registerbelegung unguenstiger wird. Jedoch wird das Programm
+schneller. Weiters habe ich ausprobiert wie sich die von wiesel vorgeschlagene
+Optimierung aus 10 verhaelt wenn man die Ausdruecke bei dem logischen and
+vertauscht - hat aber den generierten Code nicht verbessert.
+codesize: 193488
+
+-------------------------------------------------------------------------------
+1132404  99.4006  1664292  99.5130  optimize_rewrite
+  1132404  100.000  1664292  100.000  optimize_rewrite [self]
+-------------------------------------------------------------------------------
+6825      0.5991  8143      0.4869  main
+  6825     100.000  8143     100.000  main [self]
+-------------------------------------------------------------------------------
+3        2.6e-04  0              0  __libc_csu_init
+  3        100.000  0              0  __libc_csu_init [self]
+-------------------------------------------------------------------------------
+0              0  1        6.0e-05  __do_global_ctors_aux
+  0              0  1        100.000  __do_global_ctors_aux [self]
+-------------------------------------------------------------------------------
+0              0  1        6.0e-05  _init
+  0              0  1        100.000  _init [self]
+-------------------------------------------------------------------------------
