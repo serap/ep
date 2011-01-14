@@ -21,7 +21,6 @@
 
 #include <stdio.h>
 #include <unistd.h>
-#include <assert.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -3801,7 +3800,6 @@ static struct super_state **lookup_super(PrimNum *start, int length)
   int hash=hash_super(start,length);
   struct super_table_entry *p = super_table[hash];
 
-  /* assert(length >= 2); */
   for (; p!=NULL; p = p->next) {
     if (length == p->length &&
 	memcmp((char *)p->start, (char *)start, length*sizeof(PrimNum))==0)
@@ -4008,8 +4006,6 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
 	/* process trans */
 	PrimNum p = trans[i][nextstate].inst;
 	struct cost *c = super_costs+p;
-	assert(trans[i][nextstate].cost != INF_COST);
-	assert(c->state_in==nextstate);
 	printinst(c);
 	nextstate = c->state_out;
       }
@@ -4017,8 +4013,6 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
 	/* process inst */
 	PrimNum p = inst[i][nextstate].inst;
 	struct cost *c=super_costs+p;
-	assert(c->state_in==nextstate);
-	assert(inst[i][nextstate].cost != INF_COST);
 	printinst(c);
 	no_transition = inst[i][nextstate].no_transition;
 	nextstate = c->state_out;
@@ -4029,14 +4023,10 @@ void optimize_rewrite(PrimNum origs[], int ninsts)
   if (!no_transition) {
     PrimNum p = trans[i][nextstate].inst;
     struct cost *c = super_costs+p;
-    assert(c->state_in==nextstate);
-    assert(trans[i][nextstate].cost != INF_COST);
-    assert(i==nextdyn);
     printinst(c);
     nextstate = c->state_out;
   }
-  printf("\n");
-  assert(nextstate==CANONICAL_STATE);
+  puts("\n");
 }
 
 #define MAX_INPUT_SIZE 100000
